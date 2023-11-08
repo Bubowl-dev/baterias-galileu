@@ -5,19 +5,19 @@ export default {
   title: "O serviço ideal para você",
   imgs: [
     {
-      src: "/imgs/services1.png",
+      src: "https://baterias-galileu.vercel.app/imgs/services1.png",
       alt: "Imagem testando a Bateria",
       width: 334,
       height: 246,
     },
     {
-      src: "/imgs/services2.png",
+      src: "https://baterias-galileu.vercel.app/imgs/services2.png",
       alt: "Mecanico com ferramentas de fundo",
       width: 334,
       height: 246,
     },
     {
-      src: "/imgs/services3.png",
+      src: "https://baterias-galileu.vercel.app/imgs/services3.png",
       alt: "Carro aberto verificando o defeito da Bateria",
       width: 334,
       height: 246,

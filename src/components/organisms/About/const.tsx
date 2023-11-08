@@ -19,13 +19,13 @@ export default {
   ),
   imgs: [
     {
-      src: "/imgs/about-image1.png",
+      src: "https://baterias-galileu.vercel.app/imgs/about-image1.png",
       alt: "Imagem trocando a bateria do caminhão",
       width: 246,
       height: 159,
     },
     {
-      src: "/imgs/about-image2.png",
+      src: "https://baterias-galileu.vercel.app/imgs/about-image2.png",
       alt: "Imagem trocando a bateria do caminhão",
       width: 246,
       height: 159,

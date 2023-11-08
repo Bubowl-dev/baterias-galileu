@@ -10,19 +10,19 @@ export default {
 
   imgs: [
     {
-      src: "/imgs/footer1.png",
+      src: "https://baterias-galileu.vercel.app/imgs/footer1.png",
       alt: "Testando a nova bateria inserinda no carro",
       width: 129,
       height: 127,
     },
     {
-      src: "/imgs/footer2.png",
+      src: "https://baterias-galileu.vercel.app/imgs/footer2.png",
       alt: "Caminhão nas ruas com as novas baterias da baterias galileu",
       width: 129,
       height: 127,
     },
     {
-      src: "/imgs/footer3.png",
+      src: "https://baterias-galileu.vercel.app/imgs/footer3.png",
       alt: "Imagem de um capo de caminhão aberto verificando a troca da bateria",
       width: 129,
       height: 127,
