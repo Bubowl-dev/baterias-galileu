@@ -5,7 +5,7 @@ import ServicesPost from "@/components/organisms/ServicesPost";
 import C from "./const";
 import * as S from "./styles";
 
-const ContentTemplate: FC<{ content: ReactNode }> = ({ content }) => {
+const ContentTemplate = ({ content }: any) => {
   return (
     <Main>
       <S.Content>
