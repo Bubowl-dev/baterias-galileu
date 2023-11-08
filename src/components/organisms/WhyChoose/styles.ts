@@ -6,7 +6,7 @@ import { mediaMaxWidth } from "@/utils/media-query";
 import { Text } from "@/components/molecules/Button/styles";
 
 export const WhyChoose = styled.section`
-  margin: 8.9rem 0;
+  margin: 3rem 0;
   padding: 3rem 0;
 
   ${mediaMaxWidth('mobile')`
@@ -41,9 +41,9 @@ export const Img = styled(LazyImage)`
 
 export const Article = styled.article`
   width: 48rem;
-  background: ${({theme}) => theme.white};
-  box-shadow: 0rem 0rem 2.2rem 0rem ${({theme}) => theme.richBlack06};
-  border: 1px solid ${({theme}) => theme.green80};
+  background: ${({ theme }) => theme.white};
+  box-shadow: 0rem 0rem 2.2rem 0rem ${({ theme }) => theme.richBlack06};
+  border: 1px solid ${({ theme }) => theme.green80};
   border-radius: 1rem;
   padding: 4.6rem 4.8rem;
 
@@ -54,7 +54,7 @@ export const Article = styled.article`
 `;
 
 export const Title = styled.h2`
-  color: ${({theme}) => theme.richBlack};
+  color: ${({ theme }) => theme.richBlack};
   font-size: 3.1rem;
   line-height: 6.2rem;
   font-style: italic;
@@ -80,7 +80,7 @@ export const Item = styled.li`
 `;
 
 export const Content = styled.p`
-  color: ${({theme}) => theme.richBlack};
+  color: ${({ theme }) => theme.richBlack};
   font-size: 1.7rem;
   font-style: italic;
   font-weight: 400;
@@ -103,10 +103,15 @@ export const Icon = styled(LazyImage)`
 `;
 
 export const Btn = styled(Button)`
-  background: ${({theme}) => theme.whats};
+  background: ${({ theme }) => theme.whats};
+  padding: 1.7rem 2.6rem;
 
   ${Text}{
     font-size: 1.6rem;
     font-weight: 700;
   }
+
+  ${mediaMaxWidth('tablet')`
+    
+  `}
 `;

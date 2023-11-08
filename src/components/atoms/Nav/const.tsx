@@ -2,7 +2,7 @@ export default {
   menu: [
     {
       page: "Sobre nós",
-      link: "sobre-nos",
+      link: "/#sobre-nos",
       children: [],
     },
     {

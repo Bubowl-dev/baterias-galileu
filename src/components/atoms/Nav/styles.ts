@@ -14,7 +14,7 @@ export const ItemLink = styled(Link)`
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 500;
-  color: ${({theme}) => theme.ateneoBlue};
+  color: ${({ theme }) => theme.ateneoBlue};
   transition: font-weight 0.4s ease;
 
   &:hover{

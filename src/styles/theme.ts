@@ -5,6 +5,7 @@ const theme = {
   white: "#fff",
   oxfordBlue: "#032A44",
   ateneoBlue: "#0E4061",
+  ateneoBlue33: "#0e406133",
   ateneoBlue80: "#0E406180",
   background: "#EFEFEF",
   brightYellow: "#F6AF22",
@@ -30,6 +31,5 @@ export type ColorFamily = keyof typeof theme;
 type Theme = typeof theme;
 
 declare module "styled-components" {
-  //eslint-disable-next-line @typescript-eslint/no-empty-interface
-  export interface DefaultTheme extends Theme {}
+  export interface DefaultTheme extends Theme { }
 }

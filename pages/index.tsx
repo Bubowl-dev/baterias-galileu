@@ -5,8 +5,11 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>teestando</title>
-        <meta name="description" content="testando" />
+        <title>Baterias Galileu - O melhor site de baterias do Brasil</title>
+        <meta
+          name="description"
+          content="Baterias Galileu - O melhor site de baterias do Brasil"
+        />
       </Head>
 
       <HomeTemplate />

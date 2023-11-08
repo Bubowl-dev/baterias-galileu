@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import Data from "@/global/";
 import { CustomBr } from "@/utils/custom-br";
 
@@ -61,11 +62,11 @@ export default {
         <article>
           <p>ligue agora mesmo</p>
           <a
-            href={`tel:+${Data.phone[Data.phone.length - 1]
+            href={`tel:+${Data.phone.numbers[Data.phone.numbers.length - 1]
               .replaceAll(" ", "")
               .replaceAll("-", "")}`}
           >
-            {Data.phone[Data.phone.length - 1]}
+            {Data.phone.numbers[Data.phone.numbers.length - 1]}
           </a>
         </article>
       ),
@@ -77,7 +78,7 @@ export default {
         width: 40,
         height: 40,
       },
-      text: Data.address,
+      text: Data.address.text,
     },
   ],
 };

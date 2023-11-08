@@ -17,7 +17,7 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
-  color: #001523;
+  color: ${({ theme }) => theme.richBlack};
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 2.2rem;

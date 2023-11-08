@@ -6,7 +6,7 @@ const { desktop1024, desktop1920, mobile, desktop1280 } = viewportsBase;
 
 const GlobalStyles = createGlobalStyle`
   html {
-    font-size: calc(100vw / ${desktop1920.width} * 10);
+    font-size: calc(100vw / ${desktop1280.width} * 10);
 
     @media (max-width: ${desktop1280.width}px) {
       font-size: calc(100vw / ${desktop1280.width} * 10);

@@ -9,9 +9,11 @@ import _Wrapper from "@/styles/components/Wrapper";
 export const Info = styled.section`
   margin-top: 9rem;
   position: relative;
+  margin-bottom: 9rem;
 
   ${mediaMaxWidth('mobile')`
     margin-top: 3rem;
+    margin-bottom: 6rem;
   `}
 `;
 
@@ -116,7 +118,7 @@ export const Data = styled.div`
   padding: 2.3rem 7rem;
 
 
-  ${({theme}) => mediaMaxWidth('mobile')`
+  ${({ theme }) => mediaMaxWidth('mobile')`
     position: relative;
     bottom: 0; 
     flex-direction: column;
@@ -135,7 +137,7 @@ export const ContentDescription = styled.article`
     font-weight: 500;
     font-style: italic;
     line-height: 2.2rem;
-    color: ${({theme}) => theme.richBlack80};
+    color: ${({ theme }) => theme.richBlack80};
   }
 
   a{
@@ -143,7 +145,7 @@ export const ContentDescription = styled.article`
     font-weight: 600;
     font-style: italic;
     line-height: 2.2rem;
-    color: ${({theme}) => theme.richBlack};
+    color: ${({ theme }) => theme.richBlack};
   }
 
   &:nth-of-type(1)::after{
@@ -152,7 +154,7 @@ export const ContentDescription = styled.article`
     margin: 0 3.4rem;
     width: 0.1rem;
     height: 5.8rem;
-    background: ${({theme}) => theme.ateneoBlue80};
+    background: ${({ theme }) => theme.ateneoBlue80};
   }
 
   ${mediaMaxWidth('mobile')`
