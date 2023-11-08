@@ -1,4 +1,3 @@
-
 import Data from "@/global/";
 
 export default {
@@ -23,9 +22,9 @@ export default {
     target: true,
   },
   background: {
-    src: './imgs/choose.png',
+    src: "/imgs/choose.png",
     alt: "Trocando a Bateria de um caminhão!",
     width: 682,
     height: 363,
-  }
+  },
 };

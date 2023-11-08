@@ -1,8 +1,8 @@
 export default {
   logo: {
-    src: './imgs/logo.png',
-    alt: 'Logo Baterias Galileu',
+    src: "/imgs/logo.png",
+    alt: "Logo Baterias Galileu",
     width: 295.61,
-    height: 56.97
-  }
-}
+    height: 56.97,
+  },
+};
