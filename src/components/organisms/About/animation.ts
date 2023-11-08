@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 

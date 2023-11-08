@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   logo: {
     src: "https://baterias-galileu.vercel.app/imgs/logo.png",

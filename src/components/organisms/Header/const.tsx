@@ -1,14 +1,15 @@
-import Data from '@/global/'
+/* eslint-disable import/no-anonymous-default-export */
+import Data from "@/global/";
 
 export default {
   button: {
-    text: 'Fale conosco',
+    text: "Fale conosco",
     link: Data.socialShare.whats.href,
-    target: true
+    target: true,
   },
   icon: {
-    src: './svgs/headset.svg',
+    src: "./svgs/headset.svg",
     width: 20,
-    height: 20
-  }
-}
+    height: 20,
+  },
+};
