@@ -58,7 +58,7 @@ const LazyImage = forwardRef<HTMLImageElement, LazyImageProps>(
     return (
       <S.Picture>
         {responsiveSource}
-        {sourceWebp && <source srcSet={sourceWebp} type="image/webp" />}
+
         <img
           ref={ref}
           {...props}
