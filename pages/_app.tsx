@@ -1,5 +1,5 @@
-import { AppProps } from 'next/app';
-import Head from 'next/head';
+import { AppProps } from "next/app";
+import Head from "next/head";
 
 import Header from "@/components/organisms/Header";
 import Footer from "@/components/organisms/Footer";
@@ -13,16 +13,19 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <meta property="og:title" content="" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://www.fiap.com.br/`} />
+        <meta
+          property="og:url"
+          content={`https://www.bateriasgalileu.com.br/`}
+        />
         <meta charSet="UTF-8" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-        <AppProvider>
-          <Header />
-            <Component {...pageProps} />
-          <Footer />
-        </AppProvider>
+      <AppProvider>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </AppProvider>
     </>
   );
 };
