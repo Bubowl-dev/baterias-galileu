@@ -1,17 +1,18 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/display-name */
 
-
-import { forwardRef, Fragment, useMemo } from 'react';
-import LazyImageProps from './props';
-import * as S from './styles';
-import replaceExtension from '@/utils/replace-extension';
-import { viewportsBase } from '@/utils/media-query';
+import { forwardRef, Fragment, useMemo } from "react";
+import LazyImageProps from "./props";
+import * as S from "./styles";
+import replaceExtension from "@/utils/replace-extension";
+import { viewportsBase } from "@/utils/media-query";
 
 const LazyImage = forwardRef<HTMLImageElement, LazyImageProps>(
   ({ src, alt, notLazy, className, responsive, ...props }, ref) => {
     const getSourceWebp = (value: string) => {
-      const [source, ext] = replaceExtension(value, 'webp');
+      const [source, ext] = replaceExtension(value, "webp");
 
-      return ext !== '.svg' ? source : null;
+      return ext !== ".svg" ? source : null;
     };
 
     const responsiveSource = useMemo(() => {
@@ -21,8 +22,12 @@ const LazyImage = forwardRef<HTMLImageElement, LazyImageProps>(
 
       const entries = Object.entries(responsive)
         .map(([key, value]) => ({
-          maxWidth: Number(key.match('[0-9]+') ? key : viewportsBase[key as keyof typeof viewportsBase].width),
-          value
+          maxWidth: Number(
+            key.match("[0-9]+")
+              ? key
+              : viewportsBase[key as keyof typeof viewportsBase].width
+          ),
+          value,
         }))
         .sort((p1, p2) => (p1.maxWidth > p2.maxWidth ? 1 : -1));
 
@@ -35,7 +40,13 @@ const LazyImage = forwardRef<HTMLImageElement, LazyImageProps>(
 
         return (
           <Fragment key={maxWidth}>
-            {valueWebp && <source srcSet={valueWebp} media={`(max-width: ${maxWidth}px)`} type="image/webp" />}
+            {valueWebp && (
+              <source
+                srcSet={valueWebp}
+                media={`(max-width: ${maxWidth}px)`}
+                type="image/webp"
+              />
+            )}
             <source srcSet={value} media={`(max-width: ${maxWidth}px)`} />
           </Fragment>
         );
@@ -48,7 +59,14 @@ const LazyImage = forwardRef<HTMLImageElement, LazyImageProps>(
       <S.Picture>
         {responsiveSource}
         {sourceWebp && <source srcSet={sourceWebp} type="image/webp" />}
-        <img ref={ref} {...props} className={className} src={src} alt={alt} loading={notLazy ? 'eager' : 'lazy'} />
+        <img
+          ref={ref}
+          {...props}
+          className={className}
+          src={src}
+          alt={alt}
+          loading={notLazy ? "eager" : "lazy"}
+        />
       </S.Picture>
     );
   }
