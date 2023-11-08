@@ -23,7 +23,7 @@ export default {
     target: true,
   },
   background: {
-    src: "https://baterias-galileu.vercel.app/imgs/choose.png",
+    src: "./imgs/choose.png",
     alt: "Trocando a Bateria de um caminhão!",
     width: 682,
     height: 363,

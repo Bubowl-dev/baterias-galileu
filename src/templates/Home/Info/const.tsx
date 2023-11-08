@@ -44,7 +44,7 @@ export default {
   },
 
   img: {
-    src: "https://baterias-galileu.vercel.app/imgs/box-truck.png",
+    src: "./imgs/box-truck.png",
     alt: "Caminhão com bateria novinha!!",
     width: 642,
     height: 468,
