@@ -25,7 +25,7 @@ export default {
     link: Data.socialShare.whats.href,
     target: true,
     icon: {
-      src: "./svgs/whatsapp.svg",
+      src: "/svgs/whatsapp.svg",
       width: 17,
       height: 17,
     },
@@ -36,7 +36,7 @@ export default {
     href: "/",
     target: false,
     icon: {
-      src: "./svgs/rain.svg",
+      src: "/svgs/rain.svg",
       width: 11,
       height: 14,
     },
@@ -44,7 +44,7 @@ export default {
   },
 
   img: {
-    src: "./imgs/box-truck.png",
+    src: "/imgs/box-truck.png",
     alt: "Caminhão com bateria novinha!!",
     width: 642,
     height: 468,
@@ -53,7 +53,7 @@ export default {
   data: [
     {
       icon: {
-        src: "./svgs/phone-click.svg",
+        src: "/svgs/phone-click.svg",
         alt: "Icone de telefone ",
         width: 40,
         height: 40,
@@ -73,7 +73,7 @@ export default {
     },
     {
       icon: {
-        src: "./svgs/loc-click.svg",
+        src: "/svgs/loc-click.svg",
         alt: "Caminhão com bateria novinha!!",
         width: 40,
         height: 40,

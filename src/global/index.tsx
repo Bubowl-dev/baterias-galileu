@@ -3,7 +3,7 @@ export default {
   phone: {
     title: "Telefones",
     icon: {
-      src: "./svgs/phone.svg",
+      src: "/svgs/phone.svg",
       alt: "Icone de telefone",
       width: 29,
       height: 29,
@@ -19,7 +19,7 @@ export default {
   address: {
     title: "Endereço",
     icon: {
-      src: "./svgs/location.svg",
+      src: "/svgs/location.svg",
       alt: "Icone de localição",
       width: 29,
       height: 29,
@@ -33,7 +33,7 @@ export default {
   time: {
     title: "Nossos horários",
     icon: {
-      src: "./svgs/time.svg",
+      src: "/svgs/time.svg",
       alt: "Icone para representar os horarios de funcionamento",
       width: 29,
       height: 29,
@@ -45,7 +45,7 @@ export default {
       href: "",
       name: "@Galileu_baterias",
       icon: {
-        src: "./svgs/insta-footer.svg",
+        src: "/svgs/insta-footer.svg",
         alt: "Icone para representar os horarios de funcionamento",
         width: 23,
         height: 23,
@@ -55,7 +55,7 @@ export default {
       href: "",
       name: "@Galileu_baterias",
       icon: {
-        src: "./svgs/face-footer.svg",
+        src: "/svgs/face-footer.svg",
         alt: "Icone para representar os horarios de funcionamento",
         width: 23,
         height: 23,
@@ -65,7 +65,7 @@ export default {
       href: `https://api.whatsapp.com/send/?phone=${"5511944569970"}&text&type=phone_number&app_absent=0`,
       name: "Baterias Galileu",
       icon: {
-        src: "./svgs/whats-footer.svg",
+        src: "/svgs/whats-footer.svg",
         alt: "Icone para representar os horarios de funcionamento",
         width: 22.9,
         height: 23,

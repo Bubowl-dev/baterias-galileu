@@ -8,7 +8,7 @@ export default {
     target: true,
   },
   icon: {
-    src: "./svgs/headset.svg",
+    src: "/svgs/headset.svg",
     width: 20,
     height: 20,
   },

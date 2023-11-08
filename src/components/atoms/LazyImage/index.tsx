@@ -63,7 +63,7 @@ const LazyImage = forwardRef<HTMLImageElement, LazyImageProps>(
           ref={ref}
           {...props}
           className={className}
-          src={src}
+          src={`${process.env.NEXT_PUBLIC_API_URL}${src}`}
           alt={alt}
           loading={notLazy ? "eager" : "lazy"}
         />

@@ -4,7 +4,7 @@ export default [
     title: "Substituição de Baterias Automotivas",
     text: "Falha em algum sistema elétrico, como luz fraca e oscilante, problemas com o sistema de injeção do combustível, com o aquecedor e ar-condicionado. Observe as luzes no painel, quando a bateria começa a ficar menos potente, uma luz acende avisando que a peça precisa ser substituída.",
     link: "substituicao-de-baterias-automotivas",
-    img: "./posts/img1.png",
+    img: "/posts/img1.png",
     content: (
       <>
         <h1>Substituição de Baterias Automotivas</h1>
@@ -40,7 +40,7 @@ export default [
     title: "Teste de Bateria",
     text: "Faça o teste de bateria para verificar a saúde da sua bateria e diagnosticar problemas elétricos em seu veículo.",
     link: "teste-de-bateria",
-    img: "./posts/img2.png",
+    img: "/posts/img2.png",
     content: (
       <>
         <h1>Teste de Bateria: Mantenha seu Veículo Funcionando Suavemente</h1>
@@ -66,7 +66,7 @@ export default [
     title: "Serviços de Recarga de Bateria",
     text: "Recarregue a bateria do seu veículo quando estiver descarregada para evitar problemas de partida.",
     link: "servicos-de-recarga-de-bateria",
-    img: "./posts/img3.png",
+    img: "/posts/img3.png",
     content: (
       <>
         <h1>Serviços de Recarga de Bateria: Evite Problemas de Partida</h1>
@@ -95,7 +95,7 @@ export default [
     title: "Instalação de Baterias de Alto Desempenho",
     text: "Melhore o desempenho do seu veículo com a instalação de baterias de alta potência.",
     link: "instalacao-de-baterias-de-alto-desempenho",
-    img: "./posts/img4.png",
+    img: "/posts/img4.png",
     content: (
       <>
         <h1>
@@ -126,7 +126,7 @@ export default [
     title: "Assistência de Partida a Frio",
     text: "Garanta que seu veículo ligue sem problemas mesmo nas condições de inverno mais rigorosas.",
     link: "assistencia-de-partida-a-frio",
-    img: "./posts/img5.png",
+    img: "/posts/img5.png",
     content: (
       <>
         <h1>
@@ -157,7 +157,7 @@ export default [
     title: "Serviços de Manutenção Preventiva",
     text: "Realize verificações regulares de bateria e limpeza de terminais para prolongar a vida útil da bateria.",
     link: "servicos-de-manutencao-preventiva",
-    img: "./posts/img6.png",
+    img: "/posts/img6.png",
     content: (
       <>
         <h1>Serviços de Manutenção Preventiva da Bateria</h1>
@@ -184,7 +184,7 @@ export default [
     title: "Reciclagem de Baterias Automotivas",
     text: "Descarte de maneira adequada as baterias antigas para proteger o meio ambiente.",
     link: "reciclagem-de-baterias-automotivas",
-    img: "./posts/img7.png",
+    img: "/posts/img7.png",
     content: (
       <>
         <h1>Reciclagem de Baterias Automotivas: Proteja o Meio Ambiente</h1>

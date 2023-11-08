@@ -40,6 +40,7 @@ export const Wrapper = styled(_Wrapper)`
     display: flex;
     flex-direction: column;
     gap: 5.2rem;
+    position: relative;
     z-index: 2;
 
     ${mediaMaxWidth('mobile')`

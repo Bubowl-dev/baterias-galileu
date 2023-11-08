@@ -3,6 +3,7 @@ import _Wrapper from '@/styles/components/Wrapper'
 import _Stars from '@/components/atoms/Stars'
 import LazyImage from "@/components/atoms/LazyImage";
 import { mediaMaxWidth } from "@/utils/media-query";
+import Link from "next/link";
 
 export const Reviews = styled.section`
     padding: 3.9rem 0;
@@ -86,7 +87,7 @@ export const Info = styled.div`
 
 export const User = styled.div``;
 
-export const Name = styled.a`
+export const Name = styled(Link)`
     text-decoration: underline;
     color: ${({ theme }) => theme.richBlack};
     font-size: 1.2rem;
@@ -99,7 +100,7 @@ export const Name = styled.a`
 
 export const Stars = styled(_Stars)``;
 
-export const Profile = styled(LazyImage)`
+export const Profile = styled.img`
     width: 3.5rem;
     height: fit-content;
 `;

@@ -5,7 +5,7 @@ export default {
   title: "Por que nos escolher?",
   list: {
     icon: {
-      src: "./svgs/container.svg",
+      src: "/svgs/container.svg",
       alt: "Icone de correto mostrando o porque de escolher a Baterias Galileu",
       width: 24,
       height: 24,
@@ -23,7 +23,7 @@ export default {
     target: true,
   },
   background: {
-    src: "./imgs/choose.png",
+    src: "/imgs/choose.png",
     alt: "Trocando a Bateria de um caminhão!",
     width: 682,
     height: 363,

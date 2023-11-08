@@ -9,6 +9,7 @@ export const Stars = styled.div`
 
 export const Star = styled(LazyImage)`
   width: 1.8rem;
+  height: fit-content;
 
   ${mediaMaxWidth('mobile')`
     width: 2rem;

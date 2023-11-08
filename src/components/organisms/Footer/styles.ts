@@ -4,6 +4,7 @@ import _Nav from "@/components/atoms/Nav";
 import LazyImage from "@/components/atoms/LazyImage";
 import { ItemLink, Menu } from "@/components/atoms/Nav/styles";
 import { mediaMaxWidth } from "@/utils/media-query";
+import Link from "next/link";
 
 export const Footer = styled.footer`
     background: ${({ theme }) => theme.ateneoBlue};
@@ -142,7 +143,7 @@ export const Address = styled.article`
     text-transform: capitalize;
 `;
 
-export const linkTel = styled.a``;
+export const linkTel = styled(Link)``;
 
 export const Where = styled.div`
     > div{
@@ -187,7 +188,7 @@ export const WhereTitle = styled.h2`
     font-weight: 600;
 `;
 
-export const linkInsta = styled.a`
+export const linkInsta = styled(Link)`
     color: ${({ theme }) => theme.white};
     font-size: 1.2rem;
     font-style: italic;
@@ -224,7 +225,7 @@ export const line = styled.span`
     `}
 `;
 
-export const LinkBubowl = styled.a`
+export const LinkBubowl = styled(Link)`
     &:hover{
         text-decoration: underline;
     }
