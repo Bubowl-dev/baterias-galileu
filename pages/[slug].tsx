@@ -1,19 +1,33 @@
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import services from "@/services";
-import ContentTemplate from "@/templates/Content";
-import CardProps from "@/components/atoms/Card/props";
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import services from '@/services';
+import ContentTemplate from '@/templates/Content';
+import Head from 'next/head';
 
 const Content = () => {
-  const [service, setService] = useState({});
-  const {
-    query: { slug: post },
-  } = useRouter();
+  const [service, setService] = useState({ title: '', text: '' });
+  const { query: { slug: post } } = useRouter();
 
   useEffect(() => {
-    const select = services.filter((i) => i.link === post);
-    setService(select[0]);
+    const select = services.find(i => i.link === post);
+    if (select) {
+      setService(select);
+      console.log(select)
+    }
   }, [post]);
-  return <ContentTemplate {...service} />;
+
+  return (
+    <>
+      <Head>
+        <title>{service.title}</title>
+        <meta
+          name="description"
+          content={service.text}
+        />
+      </Head>
+      <ContentTemplate {...service} />
+    </>
+  );
 };
+
 export default Content;

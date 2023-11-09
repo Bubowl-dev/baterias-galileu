@@ -58,14 +58,8 @@ const LazyImage = forwardRef<HTMLImageElement, LazyImageProps>(
     return (
       <S.Picture>
         {responsiveSource}
-        <img
-          ref={ref}
-          {...props}
-          className={className}
-          src={`${process.env.NEXT_PUBLIC_API_URL}${src}`}
-          alt={alt}
-          loading={notLazy ? "eager" : "lazy"}
-        />
+        {sourceWebp && <source srcSet={sourceWebp} type="image/webp" />}
+        <img ref={ref} {...props} className={className} src={`${process.env.NEXT_PUBLIC_API_URL}${src}`} alt={alt} loading={notLazy ? 'eager' : 'lazy'} />
       </S.Picture>
     );
   }

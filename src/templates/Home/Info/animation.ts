@@ -3,7 +3,7 @@ import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 
 export default () => {
-  const sectionRef = useRef();
+  const sectionRef = useRef('');
   const content = useRef([]);
 
   useEffect(() => {
