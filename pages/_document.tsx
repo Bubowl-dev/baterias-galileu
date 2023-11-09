@@ -18,6 +18,7 @@ export default class MyDocument extends Document {
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon/symbol.svg"></link>
+        <link rel="icon" href="/favicon.png" sizes="any" />
         <meta name="theme-color" content="#0E4061" />
         </Head>
         <body>
