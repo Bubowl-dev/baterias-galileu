@@ -6,7 +6,7 @@ import LazyImage from "@/components/atoms/LazyImage";
 import { mediaMaxWidth } from "@/utils/media-query";
 import _Wrapper from "@/styles/components/Wrapper";
 
-export const Info = styled.section`
+export const Info = styled.section<{ref: any}>`
   margin-top: 9rem;
   position: relative;
   margin-bottom: 9rem;
@@ -168,4 +168,5 @@ export const ContentDescription = styled.article`
 
 export const Icone = styled(LazyImage)`
   width: 4rem;
+  height: fit-content;
 `;

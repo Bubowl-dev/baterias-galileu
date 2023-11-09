@@ -1,8 +1,10 @@
 import * as S from "../styles";
 import C from "../const";
+import useAnimation from '../animation';
 
-const InfoDesktop = () => (
-  <S.Wrapper>
+const InfoDesktop = () => {
+  const { content } = useAnimation();
+  return <S.Wrapper>
     <S.Content>
       <S.Title title={C.content.title} description={C.content.description} />
       <S.ButtonZap
@@ -26,5 +28,5 @@ const InfoDesktop = () => (
       <S.Img {...C.img} />
     </S.Background>
   </S.Wrapper>
-);
+};
 export default InfoDesktop;

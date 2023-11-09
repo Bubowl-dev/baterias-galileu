@@ -1,12 +1,15 @@
 import * as S from "./styles";
 import C from "./const";
 import { ResponsiveElement } from "@/utils/responsive-element";
+import useAnimation from './animation';
 import InfoDesktop from "./desktop";
 import InfoMobile from "./mobile";
 
 const Info = () => {
+  const { sectionRef } = useAnimation();
+
   return (
-    <S.Info>
+    <S.Info ref={sectionRef}>
       <ResponsiveElement
         breakpoints={{
           mobile: <InfoMobile />,

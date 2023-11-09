@@ -27,7 +27,7 @@ export default {
     icon: {
       src: "/svgs/whatsapp.svg",
       alt: "Icon Whatszap",
-      width: 17,
+      width: 20,
       height: 17,
     },
   },

@@ -22,7 +22,10 @@ export const Button = styled(Link)<{ sideicon: sideIconProps }>`
   `}
 `;
 
-export const Img = styled(LazyImage)``;
+export const Img = styled(LazyImage)<{width: number}>`
+  width: ${({width}) => `${width/10}rem`};
+  height: fit-content;
+`;
 
 export const Text = styled.span`
   font-size: 1.2rem;
