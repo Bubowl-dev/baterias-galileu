@@ -21,7 +21,7 @@ export const Services = styled.section`
         display: block;
         width: 100%;
         height: 100%;
-        background: url('./background/rain.png') no-repeat center;
+        background: url('https://www.bateriasgalileu.com.br/background/rain.png') no-repeat center;
         background-position: center 6.9rem;
         background-size: contain;
         position: absolute;
