@@ -13,7 +13,6 @@ export default {
       "11 94456-9970",
       "11 94750-6988",
       "11 94004-2147",
-      "11 98670-5362",
     ],
   },
   address: {
@@ -38,11 +37,11 @@ export default {
       width: 29,
       height: 29,
     },
-    time: ["9:00 - 19:00 s eg a sex", "9:00 - 14:00 sáb"],
+    time: ["Seg a Sex das 8 as 19h", "Sab das 8 as 14h"],
   },
   socialShare: {
     insta: {
-      href: "",
+      href: "https://www.instagram.com/bateriasgalileu/",
       name: "@Galileu_baterias",
       icon: {
         src: "/svgs/insta-footer.svg",
@@ -52,7 +51,7 @@ export default {
       },
     },
     face: {
-      href: "",
+      href: "https://www.facebook.com/bateriasgalileu/",
       name: "@Galileu_baterias",
       icon: {
         src: "/svgs/face-footer.svg",

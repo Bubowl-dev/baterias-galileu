@@ -130,7 +130,6 @@ export const Item = styled.li`
     font-style: italic;
     font-weight: 600;
     line-height: 2.2rem;
-    text-transform: capitalize;
 `;
 
 export const Address = styled.article`

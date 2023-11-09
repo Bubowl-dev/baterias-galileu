@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     @media (max-width: ${mobile.width}px) {
-      font-size: calc(100vw / ${414} * 10);
+      font-size: calc(100vw / ${400} * 10);
     }
     
     @media (max-height: ${mobile.width}px) and (orientation: landscape) {
