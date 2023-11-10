@@ -37,7 +37,7 @@ export default {
     href: "/",
     target: false,
     icon: {
-      src: "/svgs/rain.svg",
+      src: "/imgs/raio-garantia-de-seguranca.png", 
       width: 11,
       height: 14,
     },

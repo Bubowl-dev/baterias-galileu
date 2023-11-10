@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import _Wrapper from "@/styles/components/Wrapper";
 import LazyImage from "@/components/atoms/LazyImage";
 import _Button from '@/components/molecules/Button'
-import { mediaBetween, mediaMaxWidth } from "@/utils/media-query";
+import { mediaMaxWidth } from "@/utils/media-query";
 
 
 export const Services = styled.section`
@@ -21,7 +21,7 @@ export const Services = styled.section`
         display: block;
         width: 100%;
         height: 100%;
-        background: url('https://www.bateriasgalileu.com.br/background/rain.png') no-repeat center;
+        background: url('https://www.bateriasgalileu.com.br/background/raio.png') no-repeat center;
         background-position: center 6.9rem;
         background-size: contain;
         position: absolute;

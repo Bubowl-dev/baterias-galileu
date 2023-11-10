@@ -1,8 +1,10 @@
 import * as S from "./styles";
 import C from "./const";
 import Data from "@/global";
+import useAnimation from './animations'
 
 const Footer = () => {
+  const {lines} = useAnimation()
   return (
     <S.Footer>
       <S.Content>
@@ -23,7 +25,7 @@ const Footer = () => {
                 <S.TitleInfo>{Data.phone.title}</S.TitleInfo>
                 <S.List>
                   {Data.phone.numbers.map((tel, index) => (
-                    <S.Item key={index}>
+                    <S.Item key={index} ref={el => (lines.current[index] = el)}>
                       <S.linkTel
                         href={`tel:+55${tel.replace(" ", "").replace("-", "")}`}
                       >

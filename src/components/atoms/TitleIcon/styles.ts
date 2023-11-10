@@ -15,7 +15,7 @@ export const TitleIcon = styled.h2`
         display: block;
         height: 4.6rem;
         width: 3.5rem;
-        background: url('https://www.bateriasgalileu.com.br/svgs/rain-yellow.svg') no-repeat;
+        background: url('https://www.bateriasgalileu.com.br/imgs/raio-title.png') no-repeat;
         position: absolute;
         right: -5rem;
         top: 50%;
