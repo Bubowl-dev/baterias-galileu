@@ -8,9 +8,43 @@ import Link from "next/link";
 
 export const Footer = styled.footer`
     background: ${({ theme }) => theme.ateneoBlue};
-`;
+    display: flex;
 
-export const Background = styled.div``;
+    ${mediaMaxWidth('desktop1024')`
+        display: block;
+        
+    `}
+`; 
+
+export const Background = styled.div`
+        position: relative;
+        display: block;
+        width: 30%;
+
+        &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url('https://www.bateriasgalileu.com.br/background/raio.png') no-repeat center;
+        background-position: center 6.9rem;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+
+        ${mediaMaxWidth('mobile')`
+            width: 90%;
+            left: 5%;
+            right: 5%;
+        `}
+    }
+
+    ${mediaMaxWidth('desktop1024')`
+        display: none;
+
+    `}
+`;
 
 export const Content = styled.div``;
 

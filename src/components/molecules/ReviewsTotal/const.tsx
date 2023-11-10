@@ -10,7 +10,7 @@ export default {
       alt: "Mais uma imagem de uma pessoa que deixou uma avaliacao no Google",
     },
     {
-      src: "/imgs/reviews/pessoa2.png",
+      src: "/imgs/reviews/pessoa3.png",
       alt: "Mais uma imagem de uma pessoa que deixou uma avaliacao no Google",
     },
   ],

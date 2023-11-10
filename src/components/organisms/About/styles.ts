@@ -120,6 +120,7 @@ export const Text = styled.p`
     font-style: italic;
     font-weight: 600;
     line-height: 2.8rem;
+    margin-bottom: 3rem;
 `;
 
 export const TitleOwner = styled.p`

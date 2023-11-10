@@ -20,7 +20,6 @@ const About = () => {
           <S.ContentOwner>
             <S.Icon {...C.mensage.icon} />
             <S.Text>{C.mensage.text}</S.Text>
-            <S.TitleOwner>- {C.mensage.name}</S.TitleOwner>
           </S.ContentOwner>
         </S.Owner>
       </S.Wrapper>

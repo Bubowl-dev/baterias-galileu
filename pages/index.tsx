@@ -5,10 +5,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Baterias Galileu - O melhor site de baterias do Brasil</title>
+        <title>Instalação e Manutenção De Baterias</title>
         <meta
           name="description"
-          content="Baterias Galileu - O melhor site de baterias do Brasil"
+          content="Instalação e Manutenção De Baterias"
         />
       </Head>
 
