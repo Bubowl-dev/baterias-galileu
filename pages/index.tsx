@@ -8,7 +8,7 @@ const Home = () => {
         <title>Instalação e Manutenção De Baterias</title>
         <meta
           name="description"
-          content="Instalação e Manutenção De Baterias"
+          content="Aqui você confere a instalação e Manutenção De Baterias automotivas para carros e caminhões!!"
         />
       </Head>
 
