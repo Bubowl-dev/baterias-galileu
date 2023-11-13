@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
-          <meta name="googlebot" content="all" />
+          <meta name="robots" content="index" />
           <meta name="google-site-verification" content="IQ5x0XNBz_6YP7FZB9WqG0IPu6jla0tUXtu1QCkYFAU" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
