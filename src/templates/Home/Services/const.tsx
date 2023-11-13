@@ -24,10 +24,11 @@ export default {
   list: {
     title: "Venha fazer sua revisão gratuita",
     icons: {
-      alt: "",
+      alt: "Icone de correto para lista",
+      title: "Icone de correto para lista",
       src: "/svgs/check.svg",
-      width: 0,
-      height: 0,
+      width: 15,
+      height: 15,
     },
     items: [
       "Equipe técnica mais especializada da região",

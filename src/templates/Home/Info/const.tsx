@@ -63,7 +63,8 @@ export default {
         <article>
           <p>ligue agora mesmo</p>
           <a
-            href={`tel:+${Data.phone.numbers[Data.phone.numbers.length - 1]
+            title={Data.phone.numbers[Data.phone.numbers.length - 1]}
+            href={`tel:+55${Data.phone.numbers[Data.phone.numbers.length - 1]
               .replaceAll(" ", "")
               .replaceAll("-", "")}`}
           >

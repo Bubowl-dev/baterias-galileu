@@ -4,6 +4,7 @@ const Assessment = [
         img: {
             src: "https://lh3.googleusercontent.com/a-/ALV-UjWPyiEeCqHjydIAPrBNAni99C-Ejv3guj07F28ovU3scYg=w60-h60-p-rp-mo-ba4-br100",
             alt: "Imagem do Decio de Freitas Dias e comentario no Google Maps",
+            title:"Imagem do Decio de Freitas Dias e comentario no Google Maps",
             width: 60,
             height: 60
         },
@@ -16,6 +17,7 @@ const Assessment = [
         img: {
             src: "https://lh3.googleusercontent.com/a-/ALV-UjV5Gc1tNaVIC06S2IBSdv8XmsYgOaOYaubEZ84ebH-1S0I=w60-h60-p-rp-mo-br100",
             alt: "Imagem do Rodney Lira e comentario no Google Maps",
+            title: "Imagem do Rodney Lira e comentario no Google Maps",
             width: 60,
             height: 60
         },
@@ -28,6 +30,7 @@ const Assessment = [
         img: {
             src: "https://lh3.googleusercontent.com/a-/ALV-UjWM7n05vwkqPzdyl6IHJt1fsqLkOinXMeRJLW1qiUIyIQmM=w36-h36-p-rp-mo-br100",
             alt: "Imagem do Wanderlei e comentario no Google Maps",
+            title: "Imagem do Wanderlei e comentario no Google Maps",
             width: 60,
             height: 60
         },
