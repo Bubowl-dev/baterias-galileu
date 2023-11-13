@@ -18,6 +18,7 @@ const Reviews = () => {
                 <S.User>
                   <S.Name
                     href={i.link}
+                    title={i.name}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >

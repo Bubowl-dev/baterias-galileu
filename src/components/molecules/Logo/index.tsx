@@ -4,7 +4,7 @@ import * as S from "./styles";
 
 const Logo: FC<{ className?: string }> = ({ className }) => {
   return (
-    <S.Logo className={className} href="/">
+    <S.Logo className={className} href="/" title="Logo da Baterias Galileu">
       <S.Img
         height={C.logo.height}
         width={C.logo.width}

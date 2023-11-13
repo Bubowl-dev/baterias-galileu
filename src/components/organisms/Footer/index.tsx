@@ -28,6 +28,7 @@ const Footer = () => {
                     <S.Item key={index} ref={el => (lines.current[index] = el)}>
                       <S.linkTel
                         href={`tel:+55${tel.replace(" ", "").replace("-", "")}`}
+                        title={tel}
                       >
                         {tel}
                       </S.linkTel>
@@ -51,7 +52,9 @@ const Footer = () => {
                   {Data.time.time.map((tel, index) => (
                     <S.Item key={index}>
                       <S.linkTel
-                        href={`tel:+55${tel.replace(" ", "").replace("-", "")}`}
+                        href={`/`}
+                        onClick={(e)=> e.preventDefault()}
+                        title={tel}
                       >
                         {tel}
                       </S.linkTel>
@@ -74,6 +77,7 @@ const Footer = () => {
                 <S.WhereTitle>{C.titleShare}</S.WhereTitle>
                 <S.linkInsta
                   href={Data.socialShare.insta.href}
+                  title="rede social insta"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                 >
@@ -83,6 +87,7 @@ const Footer = () => {
                   <S.linkInsta
                     href={Data.socialShare.insta.href}
                     target="_blank"
+                    title="rede social insta"
                     rel="nofollow noopener noreferrer"
                   >
                     <S.IconWhere {...Data.socialShare.insta.icon} />
@@ -90,6 +95,7 @@ const Footer = () => {
                   <S.linkInsta
                     href={Data.socialShare.face.href}
                     target="_blank"
+                    title="rede social face"
                     rel="nofollow noopener noreferrer"
                   >
                     <S.IconWhere {...Data.socialShare.face.icon} />
@@ -97,6 +103,7 @@ const Footer = () => {
                   <S.linkInsta
                     href={Data.socialShare.whats.href}
                     target="_blank"
+                    title="rede social whats"
                     rel="nofollow noopener noreferrer"
                   >
                     <S.IconWhere {...Data.socialShare.whats.icon} />
@@ -108,7 +115,7 @@ const Footer = () => {
               <S.ContentBubowl>
                 {C.bubowl.copy}
                 <S.line>{` - `}</S.line>
-                <S.LinkBubowl href={C.bubowl.link} target="_blank">
+                <S.LinkBubowl href={C.bubowl.link} title={C.bubowl.text} target="_blank">
                   {C.bubowl.text}
                   <S.ImgBubowl {...C.bubowl.img} />
                 </S.LinkBubowl>

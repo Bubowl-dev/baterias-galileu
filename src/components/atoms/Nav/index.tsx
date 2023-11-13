@@ -10,7 +10,7 @@ const Nav: FC<{className?: string}> = ({className}) => {
       <S.Menu>
         {C.menu.map(({ page, link, children }) => (
           <S.Item key={page}>
-            <S.ItemLink href={link}>{page}</S.ItemLink>
+            <S.ItemLink href={link} title={page}>{page}</S.ItemLink>
             {!!children.length && <></>}
           </S.Item>
         ))}
