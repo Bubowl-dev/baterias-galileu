@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/react';
 
 import Header from '@/components/organisms/Header';
 import Footer from '@/components/organisms/Footer';
@@ -60,6 +61,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <Header />
         <Component {...pageProps} />
         <Footer />
+        <Analytics />
       </AppProvider>
     </>
   );
