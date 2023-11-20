@@ -4,4 +4,5 @@ export default interface TitlePageProps {
   className?: string;
   title?: ReactNode;
   description?: ReactNode;
+  subTitle?: boolean;
 }

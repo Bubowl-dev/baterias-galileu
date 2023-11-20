@@ -16,11 +16,15 @@ const ContentTemplate = ({ content }: any) => {
               <S.Btn icon={C.zap.icon} {...C.zap.button} />
             </S.Zap>
           </S.ModalZap>
-          <S.Article>{content}</S.Article>
+          <S.Article>
+            {content}
+            {C.about}
+          </S.Article>
         </S.Wrapper>
       </S.Content>
       <ServicesPost
         title={C.title}
+        subTitle={true}
         description={C.description}
         posts={services}
       />

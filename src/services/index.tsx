@@ -72,6 +72,56 @@ export default [
     )
   },
   {
+    "title": "Bateria para Caminhão: Guia de Seleção e Cuidados Essenciais",
+    "text": "Assegure o desempenho contínuo do seu caminhão com a escolha adequada de bateria. Explore nossas opções para cuidados e manutenção eficazes.",
+    "link": "bateria-para-caminhao",
+    "img": "/posts/bateria-de-caminhao.png",
+    "content": (
+      <>
+        <h1>Bateria para Caminhão: Potência e Confiabilidade para Sua Jornada</h1>
+        <p>
+          A seleção de uma bateria apropriada é crucial para garantir o funcionamento eficiente e a confiabilidade do seu caminhão. Com diversas alternativas disponíveis no mercado, é vital escolher uma bateria que atenda às necessidades específicas do seu veículo pesado.
+        </p>
+        <p>
+          Baterias de caminhão diferem em tamanho, capacidade e tecnologia em comparação com as baterias de carros convencionais. Uma bateria de qualidade garante que seu caminhão esteja sempre pronto para operar sob quaisquer condições, evitando falhas e dificuldades na partida.
+        </p>
+        <p>
+          O desempenho da bateria também influencia diretamente outros sistemas eletrônicos do caminhão, como GPS, carregadores de dispositivos e sistemas de comunicação.
+        </p>
+        <h2>Cuidados e Manutenção de Bateria para Caminhão</h2>
+        <p>
+          Manter sua bateria de caminhão em bom estado é tão importante quanto a escolha inicial. A manutenção preventiva pode reduzir a necessidade de trocas frequentes e diminuir gastos desnecessários.
+        </p>
+        <p>
+          Checagens periódicas da voltagem, limpeza dos terminais e evitar o uso de acessórios eletrônicos com o veículo desligado são ações que prolongam a vida útil da bateria.
+        </p>
+        <p>
+          Para motoristas menos experientes com a manutenção de veículos pesados, muitas oficinas oferecem verificações de bateria gratuitas ou a baixo custo, uma ótima forma de assegurar a saúde da sua bateria.
+        </p>
+        <h2>Identificando a Hora de Trocar a Bateria do seu Caminhão</h2>
+        <p>
+          Existem sinais claros que indicam a necessidade de substituição da bateria. Se o motor demora a pegar, ou se a bateria tem mais de três anos e mostra sinais de desgaste, pode ser o momento de trocá-la.
+        </p>
+        <p>
+          Outros indicativos incluem luzes do painel oscilantes e falhas no sistema elétrico do veículo. Diante desses sinais, é recomendado realizar um teste de bateria imediatamente.
+        </p>
+        <p>
+          Lembre-se de que baterias de caminhão são recicláveis. Ao substituir a sua, entregue-a em um ponto de coleta apropriado, contribuindo com o meio ambiente.
+        </p>
+        <h2>Baterias Titan: Soluções de Alta Performance para Caminhões</h2>
+        <p>
+          Na escolha de uma bateria para seu caminhão, confie na Baterias Titan. Oferecemos uma gama completa de baterias robustas e confiáveis, atendendo às exigências dos veículos pesados.
+        </p>
+        <p>
+          Com inovação e um compromisso com a satisfação do cliente, a Baterias Titan é sua aliada nas estradas. Seja para manutenção ou substituição, conte com nossa expertise e qualidade inigualável.
+        </p>
+        <p>
+          Visite a Baterias Titan e descubra por que somos referência em soluções energéticas para caminhões. Nossa equipe está pronta para ajudá-lo a escolher a melhor bateria, assegurando desempenho e segurança em todas as suas rotas.
+        </p>
+      </>
+    )
+  },
+  {
     title: 'Substituição de Baterias Automotivas',
     text: 'Falha em algum sistema elétrico, como luz fraca e oscilante, problemas com o sistema de injeção do combustível, com o aquecedor e ar-condicionado. Observe as luzes no painel, quando a bateria começa a ficar menos potente, uma luz acende avisando que a peça precisa ser substituída.',
     link: 'substituicao-de-baterias-automotivas',

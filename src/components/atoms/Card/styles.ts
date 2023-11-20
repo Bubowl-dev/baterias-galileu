@@ -13,8 +13,9 @@ export const CardLink = styled(Link)`
 `;
 
 export const Img = styled(LazyImage)`
-    width: 33rem;
-    height: fit-content;
+    width: 100%;
+    border-radius: 1.5rem;
+    height: 26rem;
 `;
 
 export const Title = styled.h2`

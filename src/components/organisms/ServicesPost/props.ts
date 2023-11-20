@@ -5,4 +5,5 @@ export default interface ServicePostProps {
     title: ReactNode;
     description: ReactNode;
     posts: CardProps[];
+    subTitle?: boolean;
 }
