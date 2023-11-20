@@ -12,7 +12,6 @@ const Content = () => {
     const select = services.find(i => i.link === post);
     if (select) {
       setService(select);
-      console.log(select)
     }
   }, [post]);
 
