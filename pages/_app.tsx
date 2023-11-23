@@ -7,8 +7,24 @@ import Footer from '@/components/organisms/Footer';
 import AppProvider from '@/context';
 
 import '../src/styles/reset.css';
+import { useEffect } from 'react';
 
 const App = ({ Component, pageProps }: AppProps) => {
+
+  useEffect(()=>{
+    const indexRemove = () => {
+      if(window.location.href.includes('index.html')){
+        window.location.href = "https://www.bateriasgalileu.com.br/"
+      }
+    }
+
+    window.onload = indexRemove;
+
+    return () => {
+      window.onload = null;
+    };
+
+  },[])
   
   return (
     <>
