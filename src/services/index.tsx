@@ -1,6 +1,77 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default [
   {
+    title: 'Moto Parada: Maior Risco de Descarregar a Bateria',
+    text: 'Descubra como evitar o descarregamento da bateria em motos que permanecem paradas por períodos prolongados.',
+    link: 'moto-parada-risco-descarregar-bateria',
+    img: '/posts/risco-de-descarregar-a-bateria.jpg',
+    content: (
+      <>
+        <h1>Moto Parada: Maior Risco de Descarregar a Bateria</h1>
+        <p>
+          Manter sua moto parada por longos períodos pode aumentar o risco de descarregamento da bateria. Este artigo
+          explica como isso acontece e quais medidas podem ser tomadas para evitar essa situação, mantendo sua moto
+          sempre pronta para o uso.
+        </p>
+        <h2>Por Que a Bateria Descarrega em Motos Paradas?</h2>
+        <p>
+          Mesmo quando desligada, a moto consome uma pequena quantidade de energia da bateria. Isso pode levar ao
+          descarregamento completo se a moto ficar parada por muito tempo.
+        </p>
+        <h2>Prevenindo o Descarregamento da Bateria</h2>
+        <p>
+          Dicas para prevenir o descarregamento incluem desligar todos os dispositivos elétricos, manter a bateria em
+          locais com temperaturas estáveis, e considerar o uso de um carregador de bateria de manutenção.
+        </p>
+        <h2>Manutenção Regular da Bateria</h2>
+        <p>
+          Realizar verificações periódicas e manter a bateria limpa e bem conectada são práticas essenciais para prolongar
+          sua vida útil.
+        </p>
+        <h2>Visite a Baterias Galileu</h2>
+        <p>
+          Para mais informações e serviços especializados, visite a Baterias Galileu. Nossa equipe de profissionais está
+          pronta para oferecer a melhor solução para a bateria da sua moto.
+        </p>
+      </>
+    )
+  },
+  {
+    title: 'O que Fazer Quando a Bateria do Carro Descarregou?',
+    text: 'Aprenda a identificar e resolver situações em que a bateria do seu carro descarregou, evitando transtornos e danos ao veículo.',
+    link: 'bateria-do-carro-descarregou',
+    img: '/posts/bateria-do-carro descarregou.jpg',
+    content: (
+      <>
+        <h1>O que Fazer Quando a Bateria do Carro Descarregou?</h1>
+        <p>
+          Se a bateria do seu carro descarregou, não entre em pânico. Existem várias maneiras de solucionar o problema e
+          prevenir ocorrências futuras.
+        </p>
+        <h2>Identificando uma Bateria Descarregada</h2>
+        <p>
+          Sinais de uma bateria descarregada incluem dificuldade para dar partida no motor, luzes fracas e falhas nos
+          sistemas eletrônicos do veículo.
+        </p>
+        <h2>Passos para Recarregar uma Bateria Descarregada</h2>
+        <p>
+          Conheça as etapas para recarregar a bateria de forma segura, incluindo o uso de cabos de arranque ou um
+          carregador de bateria.
+        </p>
+        <h2>Prevenindo o Descarregamento Futuro</h2>
+        <p>
+          Dicas para prevenir o descarregamento da bateria incluem manter o veículo em uso regular, evitar o uso excessivo
+          de acessórios eletrônicos enquanto o motor está desligado, e realizar verificações periódicas da bateria.
+        </p>
+        <h2>Conheça as Soluções da Baterias Galileu</h2>
+        <p>
+          Para as melhores soluções em baterias e serviços de manutenção, visite a Baterias Galileu. Nossa equipe
+          especializada está pronta para ajudá-lo a manter seu carro sempre em perfeitas condições.
+        </p>
+      </>
+    )
+  },  
+  {
     title: 'Bateria para Carro: Escolha e Manutenção Ideal',
     text: 'Garanta a máxima eficiência do seu automóvel com a escolha correta da bateria para carro. Conheça nossas soluções para uma manutenção impecável e duradoura.',
     link: 'bateria-para-carro',
@@ -108,15 +179,15 @@ export default [
         <p>
           Lembre-se de que baterias de caminhão são recicláveis. Ao substituir a sua, entregue-a em um ponto de coleta apropriado, contribuindo com o meio ambiente.
         </p>
-        <h2>Baterias Titan: Soluções de Alta Performance para Caminhões</h2>
+        <h2>Baterias Galileu: Soluções de Alta Performance para Caminhões</h2>
         <p>
-          Na escolha de uma bateria para seu caminhão, confie na Baterias Titan. Oferecemos uma gama completa de baterias robustas e confiáveis, atendendo às exigências dos veículos pesados.
+          Na escolha de uma bateria para seu caminhão, confie na Baterias Galileu. Oferecemos uma gama completa de baterias robustas e confiáveis, atendendo às exigências dos veículos pesados.
         </p>
         <p>
-          Com inovação e um compromisso com a satisfação do cliente, a Baterias Titan é sua aliada nas estradas. Seja para manutenção ou substituição, conte com nossa expertise e qualidade inigualável.
+          Com inovação e um compromisso com a satisfação do cliente, a Baterias Galileu é sua aliada nas estradas. Seja para manutenção ou substituição, conte com nossa expertise e qualidade inigualável.
         </p>
         <p>
-          Visite a Baterias Titan e descubra por que somos referência em soluções energéticas para caminhões. Nossa equipe está pronta para ajudá-lo a escolher a melhor bateria, assegurando desempenho e segurança em todas as suas rotas.
+          Visite a Baterias Galileu e descubra por que somos referência em soluções energéticas para caminhões. Nossa equipe está pronta para ajudá-lo a escolher a melhor bateria, assegurando desempenho e segurança em todas as suas rotas.
         </p>
       </>
     )
