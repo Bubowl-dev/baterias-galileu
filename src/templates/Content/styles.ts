@@ -20,9 +20,7 @@ export const Wrapper = styled(_Wrapper)`
 `;
 
 export const Article = styled.article`
-    ${mediaMaxWidth('desktop1024')`
-        width: 190%;
-    `}
+    width: 100%;
 
   h1 {
     color: ${({ theme }) => theme.richBlack};
@@ -35,26 +33,11 @@ export const Article = styled.article`
 
     ${mediaMaxWidth('mobile')`
             font-size: 2.6rem;
-            line-height: 4.2rem;
-        `}
+            line-height: 3.2rem;
+    `}
   }
 
   h2 {
-    color: ${({ theme }) => theme.richBlack};
-    font-size: 3.6rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 4.8rem;
-    text-transform: capitalize;
-    margin: 3rem 0;
-
-    ${mediaMaxWidth('mobile')`
-            font-size: 2.2rem;
-            line-height: 3.8rem;
-        `}
-  }
-
-  h3 {
     color: ${({ theme }) => theme.richBlack};
     font-size: 3.2rem;
     font-style: normal;
@@ -64,12 +47,12 @@ export const Article = styled.article`
     margin: 3rem 0;
 
     ${mediaMaxWidth('mobile')`
-            font-size: 2rem;
-            line-height: 3.8rem;
+            font-size: 2.2rem;
+            line-height: 2.8rem;
         `}
   }
 
-  h4 {
+  h3 {
     color: ${({ theme }) => theme.richBlack};
     font-size: 2.8rem;
     font-style: normal;
@@ -79,8 +62,23 @@ export const Article = styled.article`
     margin: 3rem 0;
 
     ${mediaMaxWidth('mobile')`
+            font-size: 2rem;
+            line-height: 2.8rem;
+    `}
+  }
+
+  h4 {
+    color: ${({ theme }) => theme.richBlack};
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.8rem;
+    text-transform: capitalize;
+    margin: 3rem 0;
+
+    ${mediaMaxWidth('mobile')`
             font-size: 1.8rem;
-            line-height: 3.8rem;
+            line-height: 2.8rem;
         `}
   }
 
@@ -118,7 +116,11 @@ export const Article = styled.article`
 `;
 
 export const ModalZap = styled.div`
-  width: 90%;
+  width: 35%;
+
+  ${mediaMaxWidth('desktop1024')`
+        width: 45%;
+    `}
 
   ${mediaMaxWidth('mobile')`
         display: none;
