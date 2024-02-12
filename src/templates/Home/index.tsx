@@ -1,9 +1,9 @@
-import { Main } from "@/styles/components/Main";
-import Info from "./Info";
-import WhyChoose from "@/components/organisms/WhyChoose";
-import About from "@/components/organisms/About";
-import Services from "./Services";
-import Reviews from "./Reviews";
+import { Main } from '@/styles/components/Main';
+import Info from './Info';
+import WhyChoose from '@/components/organisms/WhyChoose';
+import About from '@/components/organisms/About';
+import Services from './Services';
+import Reviews from './Reviews';
 
 const HomeTemplate = () => {
   return (

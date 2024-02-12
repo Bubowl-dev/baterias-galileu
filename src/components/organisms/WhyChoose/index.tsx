@@ -1,9 +1,12 @@
-import C from "./const";
-import * as S from "./styles";
+import C from './const';
+import * as S from './styles';
+import Animation from '@/components/atoms/Animation';
 
 const WhyChoose = () => {
+  const { sectionRef } = Animation();
+
   return (
-    <S.WhyChoose>
+    <S.WhyChoose ref={sectionRef}>
       <S.Wrapper>
         <S.Img {...C.background} />
         <S.Article>

@@ -1,9 +1,12 @@
-import * as S from "./styles";
-import C from "./const";
+import * as S from './styles';
+import C from './const';
+import Animation from '@/components/atoms/Animation';
 
 const Services = () => {
+  const { sectionRefY } = Animation();
+
   return (
-    <S.Services>
+    <S.Services ref={sectionRefY}>
       <S.Wrapper>
         <S.Title>{C.title}</S.Title>
         <S.Imgs>
