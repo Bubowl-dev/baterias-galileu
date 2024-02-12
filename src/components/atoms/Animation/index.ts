@@ -49,7 +49,6 @@ const Animation = () => {
       gsap.from(sectionReviews, {
         scrollTrigger: {
           trigger: sectionReviews,
-          markers: true,
           scrub: 1,
           start: 'top 60%',
           end: 'top center'
