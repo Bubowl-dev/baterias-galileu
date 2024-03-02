@@ -3,6 +3,7 @@ import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/do
 import Script from 'next/script';
 import { ServerStyleSheet } from 'styled-components';
 
+
 export default class MyDocument extends Document {
   render() {
     return (

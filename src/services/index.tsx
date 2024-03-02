@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
-export default [{
+export default [
+  {
   title: 'Como Identificar Sinais de que Sua Bateria Está Chegando ao Fim: Guia Essencial',
   text: 'Aprenda a reconhecer os sinais que indicam que sua bateria está no fim de sua vida útil.',
   link: 'sinais-bateria-fim-guia-essencial',
