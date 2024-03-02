@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.10",
     "gsap": "^3.12.2",
     "next": "latest",
     "next-pwa": "^5.6.0",
