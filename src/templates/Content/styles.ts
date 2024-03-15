@@ -20,7 +20,7 @@ export const Wrapper = styled(_Wrapper)`
 `;
 
 export const Article = styled.article`
-    width: 100%;
+  width: 100%;
 
   h1 {
     color: ${({ theme }) => theme.richBlack};
@@ -81,8 +81,26 @@ export const Article = styled.article`
             line-height: 2.8rem;
         `}
   }
+  ul {
+    margin-left: 1.8rem;
+  }
 
-  p {
+  li {
+    list-style: disc;
+  }
+
+  strong {
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    ${mediaMaxWidth('mobile')`
+      font-size: 1.4rem;
+    `}
+  }
+
+  p,
+  li,
+  span {
     color: ${({ theme }) => theme.richBlack};
     font-size: 1.4rem;
     font-style: normal;
