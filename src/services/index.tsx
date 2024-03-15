@@ -6,7 +6,7 @@ export default [
   {
     title: 'Bateria de carro: como escolher a melhor opção para o seu veículo',
     text: 'Se você tem um carro com motor 1.0 a 1.8, o recomendável são os modelos de 45 Ah ou 50 ah....',
-    link: 'sinais-bateria-fim-guia-essencial',
+    link: 'melhor-bateria-de-carro',
     img: '/posts/bateria-de-carro.jpg',
     content: (
       <>
