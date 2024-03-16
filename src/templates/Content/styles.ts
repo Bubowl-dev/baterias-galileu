@@ -118,9 +118,15 @@ export const Article = styled.article`
     width: 30rem;
     height: fit-content;
 
+    &.img {
+      width: 100% !important;
+      border-radius: 1.5rem;
+      margin-bottom: 30px;
+    }
+
     ${mediaMaxWidth('mobile')`
-            width: 18rem;
-        `}
+      width: 18rem;
+    `}
   }
 
   figure {

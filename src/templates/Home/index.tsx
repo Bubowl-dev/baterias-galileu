@@ -3,7 +3,7 @@ import Info from './Info';
 import WhyChoose from '@/components/organisms/WhyChoose';
 import About from '@/components/organisms/About';
 import Services from './Services';
-import Reviews from './Reviews';
+import Reviews from '@/components/organisms/Reviews';
 
 const HomeTemplate = () => {
   return (

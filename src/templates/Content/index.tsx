@@ -1,9 +1,9 @@
-import { FC, ReactNode } from "react";
-import { Main } from "@/styles/components/Main";
-import services from "@/services";
-import ServicesPost from "@/components/organisms/ServicesPost";
-import C from "./const";
-import * as S from "./styles";
+import { Main } from '@/styles/components/Main';
+import services from '@/services';
+import ServicesPost from '@/components/organisms/ServicesPost';
+import C from './const';
+import * as S from './styles';
+import Reviews from '@/components/organisms/Reviews';
 
 const ContentTemplate = ({ content }: any) => {
   return (
@@ -17,17 +17,13 @@ const ContentTemplate = ({ content }: any) => {
             </S.Zap>
           </S.ModalZap>
           <S.Article>
-            {content}
+            <div dangerouslySetInnerHTML={{ __html: content }} />
             {C.about}
           </S.Article>
         </S.Wrapper>
       </S.Content>
-      <ServicesPost
-        title={C.title}
-        subTitle={true}
-        description={C.description}
-        posts={services}
-      />
+      <ServicesPost title={C.title} subTitle={true} description={C.description} posts={services} />
+      <Reviews />
     </Main>
   );
 };

@@ -1,6 +1,3 @@
-import { Img } from '@/components/atoms/Card/styles';
-import { Cape } from './styles';
-
 /* eslint-disable import/no-anonymous-default-export */
 export default [
   {
@@ -8,14 +5,72 @@ export default [
     text: 'Se você tem um carro com motor 1.0 a 1.8, o recomendável são os modelos de 45 Ah ou 50 ah....',
     link: 'melhor-bateria-de-carro',
     img: '/posts/bateria-de-carro.jpg',
-    content: (
-      <>
+    schema: [
+      `{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quais são os sinais de que a bateria do carro está chegando ao fim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os sinais incluem dificuldade na partida do veículo, luzes do painel fracas ou piscando, sinais de oxidação nos terminais da bateria, diminuição do desempenho do sistema elétrico, aumento da necessidade de recarga frequente e tempo de vida útil da bateria próximo do fim (geralmente entre 3 a 5 anos)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que fazer se identificar sinais de problema na bateria do carro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se identificar sinais de problema, é recomendado verificar e limpar os terminais da bateria, testar o funcionamento da bateria com um multímetro, substituir a bateria por uma nova de qualidade, se necessário, e realizar manutenção preventiva regularmente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais são os tipos de baterias disponíveis no mercado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os tipos de baterias incluem Baterias Moura, Bateria Heliar, Bateria Acdelco, Bateria Premium, Bateria Moura EFB e Bateria Heliar AGM, cada uma com características específicas adequadas para diferentes veículos e necessidades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que significa AH (Amperes Hora) em baterias?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AH (Amperes Hora) é uma medida da capacidade de energia de uma bateria, indicando quanta corrente ela pode fornecer por um período de tempo. É um indicador da capacidade de carga da bateria, determinando quanto tempo ela pode alimentar os componentes elétricos do carro antes de precisar ser recarregada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como escolher a capacidade correta em Ah para a bateria do meu veículo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A capacidade correta em Ah depende do tipo de veículo e das exigências do seu sistema elétrico. Veículos pequenos e compactos geralmente utilizam baterias de 40 Ah a 60 Ah, veículos de médio porte de 60 Ah a 80 Ah, veículos grandes e SUVs de 80 Ah a 100 Ah ou mais, e veículos de alto desempenho e de luxo podem exigir baterias com capacidades acima de 100 Ah."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a importância da Casa das Baterias Galileu no setor de baterias?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Desde 1973, a Casa das Baterias Galileu é sinônimo de confiança e qualidade, oferecendo uma ampla gama de baterias de alta qualidade para diversos veículos. Eles se destacam por atualizar constantemente seu portfólio com as melhores marcas e fornecer um serviço completo que inclui instalação e manutenção profissional."
+          }
+        }
+      ]
+    }
+    `
+    ],
+    content: `
         <h1>A melhor bateria de carro</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/bateria-de-carro.jpg"
-          alt={'Bateria de carro: como escolher a melhor opção para o seu veículo'}
-          width={635}
-          height={246}
+          alt='Bateria de carro: como escolher a melhor opção para o seu veículo'
+          title='Bateria de carro: como escolher a melhor opção para o seu veículo'
+          width='635'
+          height='246'
         />
         <p>
           Reconhecer os sinais que indicam que sua bateria está chegando ao fim é fundamental para evitar contratempos
@@ -48,35 +103,35 @@ export default [
           para o seu veículo. Aqui estão algumas opções de destaque:
         </p>
 
-        <Img src="/posts/bateria-moura.png" alt={'Baterias Moura'} width={335} height={246} />
+        <img src="/posts/bateria-moura.png" alt='Baterias Moura' title='Baterias Moura' width='335' height='246' />
         <p>
           <strong>Bateria Moura:</strong> Reconhecida pela qualidade aprovada por grandes montadoras nacionais e
           internacionais como Fiat, Ford, Volkswagen, Mercedes, Renault e Nissan. Ela é a escolha original para muitos
           desses veículos.
         </p>
-        <Img src="/posts/bateria-heliar.png" alt={'Bateria Heliar'} width={335} height={246} />
+        <img src="/posts/bateria-heliar.png" alt='Bateria Heliar' title='Bateria Heliar' width='335' height='246' />
 
         <p>
           <strong>Bateria Heliar:</strong> Com sua tecnologia Power Frame, oferece resistência e autonomia superiores,
           sendo reconhecida globalmente por montadoras pela sua garantia de qualidade.
         </p>
-        <Img src="/posts/acdelco.png" alt={'Bateria Acdelco'} width={335} height={246} />
+        <img src="/posts/acdelco.png" alt='Bateria Acdelco' title='Bateria Acdelco' width='335' height='246' />
         <p>
           <strong>Bateria Acdelco:</strong> Marca renomada entre as montadoras, sinônimo de tradição e qualidade,
           especialmente conhecida por estar associada aos veículos da GM.
         </p>
-        <Img src="/posts/premiu.png" alt={'Bateria Premium'} width={335} height={246} />
+        <img src="/posts/premiu.png" alt='Bateria Premium' title='Bateria Premium' width='335' height='246' />
         <p>
           <strong>Bateria Premium:</strong> Para os que procuram alta tecnologia e desempenho, essa bateria apresenta um
           design inovador e utiliza materiais de última geração. Sua Tecnologia Advanced Grid assegura uma vida útil
           estendida, alto desempenho e segurança.
         </p>
-        <Img src="/posts/efb.png" alt={'Bateria Moura EFB'} width={335} height={246} />
+        <img src="/posts/efb.png" alt='Bateria Moura EFB' title='Bateria Moura EFB' width='335' height='246' />
         <p>
           <strong>Bateria Moura EFB:</strong> Perfeita para veículos com sistema Start-Stop e alternadores inteligentes,
           oferecendo durabilidade até duas vezes superior às baterias convencionais.
         </p>
-        <Img src="/posts/agm.png" alt={'Bateria Heliar AGM'} width={335} height={246} />
+        <img src="/posts/agm.png" alt='Bateria Heliar AGM'  title='Bateria Heliar AGM' width='335' height='246' />
         <p>
           <strong>Bateria Heliar AGM:</strong> Representa o ápice da tecnologia chumbo-ácido, ideal para veículos de
           alta tecnologia com demandas energéticas intensas para sistemas Start-Stop e de regeneração de energia,
@@ -139,7 +194,7 @@ export default [
           antes de se esgotar.
         </p>
         <p>
-          Se você tem um carro com motor 1.0 a 1.8, o recomendável são os modelos de <strong>45 Ah</strong> ou{' '}
+          Se você tem um carro com motor 1.0 a 1.8, o recomendável são os modelos de <strong>45 Ah</strong> ou
           <strong>50 Ah</strong>. Essa capacidade é suficiente para atender às necessidades elétricas de veículos com
           essas especificações de motor, garantindo uma partida confiável e o funcionamento adequado de todos os
           componentes elétricos.
@@ -151,22 +206,47 @@ export default [
           funcionamento do veículo e evitar contratempos desnecessários. Fique atento aos sinais mencionados e, se
           necessário, não hesite em realizar a substituição da bateria por uma nova e de qualidade.
         </p>
-      </>
-    )
+      `
   },
   {
     title: 'Como Identificar Sinais de que Sua Bateria Está Chegando ao Fim: Guia Essencial',
     text: 'Aprenda a reconhecer os sinais que indicam que sua bateria está no fim de sua vida útil.',
     link: 'sinais-bateria-fim-guia-essencial',
+    schema: [
+      `{
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Como Identificar Sinais De Que Sua Bateria Está Chegando Ao Fim: Guia Essencial",
+      "description": "Reconhecer os sinais que indicam que sua bateria está chegando ao fim é fundamental para evitar contratempos inesperados. Uma bateria com problemas pode causar dificuldades na partida do veículo e até mesmo deixá-lo parado em momentos cruciais.",
+      "articleBody": "Existem diversos sinais que podem indicar que sua bateria está chegando ao fim, incluindo dificuldade na partida do veículo, luzes do painel fracas ou piscando, sinais de oxidação nos terminais da bateria, diminuição do desempenho do sistema elétrico, aumento da necessidade de recarga frequente, e tempo de vida útil da bateria próximo do fim (geralmente entre 3 a 5 anos). Se você identificar algum desses sinais, é importante agir rapidamente para evitar problemas futuros. Alguns passos que podem ser tomados incluem verificar os terminais da bateria e limpar eventuais sinais de oxidação, testar o funcionamento da bateria com um multímetro, substituir a bateria, se necessário, por uma nova de qualidade, e realizar manutenção preventiva regularmente para prolongar a vida útil da bateria. Desde a nossa fundação em 1973, a Casa das Baterias Galileu tem sido um nome sinônimo de confiança e qualidade no setor de baterias. Oferecemos uma ampla gama de baterias de alta qualidade para diversos veículos, incluindo caminhões, ônibus, máquinas pesadas e carros de passeio.",
+      "author": {
+        "@type": "Organization",
+        "name": "Casa das Baterias Galileu"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Casa das Baterias Galileu",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bateriasgalileu.com.br/imgs/logo.webp"
+        }
+      },
+      "datePublished": "2024-03-16",
+      "dateModified": "2024-03-16"
+    }
+    `
+    ],
     img: '/posts/sinais-bateria-fim.jpg',
-    content: (
-      <>
+    content: `
+      
         <h1>Como Identificar Sinais de que Sua Bateria Está Chegando ao Fim: Guia Essencial</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/sinais-bateria-fim.jpg"
-          alt={'Como Identificar Sinais de que Sua Bateria Está Chegando ao Fim: Guia Essencial'}
-          width={635}
-          height={246}
+          alt='Como Identificar Sinais de que Sua Bateria Está Chegando ao Fim: Guia Essencial'
+          title='Como Identificar Sinais de que Sua Bateria Está Chegando ao Fim: Guia Essencial'
+          width='635'
+          height='246'
         />
         <p>
           Reconhecer os sinais que indicam que sua bateria está chegando ao fim é fundamental para evitar contratempos
@@ -199,22 +279,24 @@ export default [
           funcionamento do veículo e evitar contratempos desnecessários. Fique atento aos sinais mencionados e, se
           necessário, não hesite em realizar a substituição da bateria por uma nova e de qualidade.
         </p>
-      </>
-    )
+      `
   },
   {
     title: 'Carro Não Liga: Descubra o que Pode Ser e Como Resolver',
     text: 'Descubra as possíveis causas para o problema de um carro que não liga e como solucioná-lo.',
     link: 'carro-nao-liga-o-que-pode-ser-e-como-resolver',
+    schema: [],
     img: '/posts/carro-nao-liga.jpg',
-    content: (
-      <>
+    content: `
+      
         <h1>Carro Não Liga: Descubra o que Pode Ser e Como Resolver</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/carro-nao-liga.jpg"
-          alt={'Carro Não Liga: Descubra o que Pode Ser e Como Resolver'}
-          width={635}
-          height={246}
+          alt='Carro Não Liga: Descubra o que Pode Ser e Como Resolver'
+          title='Carro Não Liga: Descubra o que Pode Ser e Como Resolver'
+          width='635'
+          height='246'
         />
         <p>
           O pesadelo de muitos motoristas é se deparar com um carro que não liga, especialmente em momentos cruciais.
@@ -248,26 +330,29 @@ export default [
           complexas. É fundamental realizar uma análise cuidadosa e, se necessário, contar com a ajuda de um
           profissional qualificado para diagnosticar e resolver o problema de forma eficiente.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Moto Parada: Maior Risco de Descarregar a Bateria',
     text: 'Descubra como evitar o descarregamento da bateria em motos que permanecem paradas por períodos prolongados.',
     link: 'moto-parada-risco-descarregar-bateria',
+    schema: [],
     img: '/posts/risco-de-descarregar-a-bateria.jpg',
-    content: (
-      <>
+    content: `
+      
         <h1>Moto Parada: Maior Risco de Descarregar a Bateria</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/risco-de-descarregar-a-bateria.jpg"
-          alt={'Moto Parada: Maior Risco de Descarregar a Bateria'}
-          width={635}
-          height={246}
+          alt='Moto Parada: Maior Risco de Descarregar a Bateria'
+          title='Moto Parada: Maior Risco de Descarregar a Bateria'
+          width='635'
+          height='246'
         />
         <p>
           Em um cenário onde motocicletas se tornaram mais do que um meio de transporte, mas uma extensão da
-          personalidade de seus donos, a manutenção adequada é crucial. Neste contexto, a{' '}
+          personalidade de seus donos, a manutenção adequada é crucial. Neste contexto, a
           <strong>Baterias Galileu</strong> destaca um aspecto frequentemente negligenciado: o risco de descarregar a
           bateria em motos que permanecem paradas por períodos prolongados.
         </p>
@@ -321,22 +406,25 @@ export default [
           Nossa equipe está pronta para ajudá-lo a escolher a melhor bateria que seu carro merece, garantindo
           performance e tranquilidade em todas as viagens.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'O que Fazer Quando a Bateria do Carro Descarregou?',
     text: 'Aprenda a identificar e resolver situações em que a bateria do seu carro descarregou, evitando transtornos e danos ao veículo.',
     link: 'bateria-do-carro-descarregou',
+    schema: [],
     img: '/posts/bateria-do-carro descarregou.jpg',
-    content: (
-      <>
+    content: `
+      
         <h1>O que Fazer Quando a Bateria do Carro Descarregou?</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/bateria-do-carro descarregou.jpg"
-          alt={'O que Fazer Quando a Bateria do Carro Descarregou?'}
-          width={635}
-          height={246}
+          alt='O que Fazer Quando a Bateria do Carro Descarregou?'
+          title='O que Fazer Quando a Bateria do Carro Descarregou?'
+          width='635'
+          height='246'
         />
         <p>
           Se a bateria do seu carro descarregou, não entre em pânico. Existem várias maneiras de solucionar o problema e
@@ -376,18 +464,20 @@ export default [
           Nossa equipe está pronta para ajudá-lo a escolher a melhor bateria que seu carro merece, garantindo
           performance e tranquilidade em todas as viagens.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Bateria para Carro: Escolha e Manutenção Ideal',
     text: 'Garanta a máxima eficiência do seu automóvel com a escolha correta da bateria para carro. Conheça nossas soluções para uma manutenção impecável e duradoura.',
     link: 'bateria-para-carro',
+    schema: [],
     img: '/posts/img8.jpeg',
-    content: (
-      <>
+    content: `
+      
         <h1>Bateria para Carro: Energia Confiável para seu Dia a Dia</h1>
-        <Cape src="/posts/img8.jpeg" alt={'Bateria para Carro: Escolha e Manutenção Ideal'} width={635} height={246} />
+        <img
+          class="img" src="/posts/img8.jpeg" alt='Bateria para Carro: Escolha e Manutenção Ideal' title='Bateria para Carro: Escolha e Manutenção Ideal' width='635' height='246' />
         <p>
           A escolha da bateria correta é fundamental para garantir o bom funcionamento e a eficiência energética do seu
           automóvel. Com uma vasta gama de opções no mercado, é essencial selecionar uma bateria que atenda às
@@ -448,22 +538,25 @@ export default [
           Nossa equipe está pronta para ajudá-lo a escolher a melhor bateria que seu carro merece, garantindo
           performance e tranquilidade em todas as viagens.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Bateria para Caminhão: Guia de Seleção e Cuidados Essenciais',
     text: 'Assegure o desempenho contínuo do seu caminhão com a escolha adequada de bateria. Explore nossas opções para cuidados e manutenção eficazes.',
     link: 'bateria-para-caminhao',
+    schema: [],
     img: '/posts/bateria-de-caminhao.png',
-    content: (
-      <>
+    content: `
+      
         <h1>Bateria para Caminhão: Potência e Confiabilidade para Sua Jornada</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/bateria-de-caminhao.png"
-          alt={'Bateria para Caminhão: Guia de Seleção e Cuidados Essenciais'}
-          width={635}
-          height={246}
+          alt='Bateria para Caminhão: Guia de Seleção e Cuidados Essenciais'
+          title='Bateria para Caminhão: Guia de Seleção e Cuidados Essenciais'
+          width='635'
+          height='246'
         />
         <p>
           A seleção de uma bateria apropriada é crucial para garantir o funcionamento eficiente e a confiabilidade do
@@ -519,18 +612,20 @@ export default [
           equipe está pronta para ajudá-lo a escolher a melhor bateria, assegurando desempenho e segurança em todas as
           suas rotas.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Substituição de Baterias Automotivas',
     text: 'Falha em algum sistema elétrico, como luz fraca e oscilante, problemas com o sistema de injeção do combustível, com o aquecedor e ar-condicionado. Observe as luzes no painel, quando a bateria começa a ficar menos potente, uma luz acende avisando que a peça precisa ser substituída.',
     link: 'substituicao-de-baterias-automotivas',
+    schema: [],
     img: '/posts/img9.jpeg',
-    content: (
-      <>
+    content: `
+      
         <h1>Substituição de Baterias Automotivas</h1>
-        <Cape src="/posts/img9.jpeg" alt={'Substituição de Baterias Automotivas'} width={635} height={246} />
+        <img
+          class="img" src="/posts/img9.jpeg" alt='Substituição de Baterias Automotivas' title='Substituição de Baterias Automotivas' width='635' height='246' />
         <p>
           A substituição de baterias automotivas é um serviço essencial para manter seu veículo funcionando sem
           problemas. Uma bateria fraca pode resultar em falhas no sistema elétrico, como luz fraca e oscilante, e também
@@ -551,30 +646,31 @@ export default [
           Confie em profissionais qualificados para realizar a substituição da bateria do seu veículo e mantenha-se no
           controle da sua segurança e do bom funcionamento do seu automóvel.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Teste de Bateria',
     text: 'Faça o teste de bateria para verificar a saúde da sua bateria e diagnosticar problemas elétricos em seu veículo.',
     link: 'teste-de-bateria',
+    schema: [],
     img: '/posts/bateria-automotiva.jpg',
-    content: (
-      <>
+    content: `
+      
         <h1>Teste de Bateria: Mantenha seu Veículo Funcionando Suavemente</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/bateria-automotiva.jpg"
-          alt={
-            'Faça o teste de bateria para verificar a saúde da sua bateria e diagnosticar problemas elétricos em seu veículo'
-          }
-          width={635}
-          height={246}
+          alt='Faça o teste de bateria para verificar a saúde da sua bateria e diagnosticar problemas elétricos em seu veículo'
+          title='Faça o teste de bateria para verificar a saúde da sua bateria e diagnosticar problemas elétricos em seu veículo'
+          width='635'
+          height='246'
         />
         <p>
           Fazer um teste de bateria é crucial para garantir que seu veículo funcione sem problemas. Um teste de bateria
           pode revelar problemas elétricos que afetam o desempenho do seu carro.
         </p>
-        <h2>Por que é importante testar sua bateria regularmente?</h2>{' '}
+        <h2>Por que é importante testar sua bateria regularmente?</h2>
         <p>
           Manter a bateria em boas condições é essencial para evitar problemas de partida e outras questões relacionadas
           à eletricidade do veículo.
@@ -584,22 +680,25 @@ export default [
           Confie em profissionais para realizar um teste de bateria preciso e garantir a saúde do sistema elétrico do
           seu veículo.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Serviços de Recarga de Bateria',
     text: 'Recarregue a bateria do seu veículo quando estiver descarregada para evitar problemas de partida.',
     link: 'servicos-de-recarga-de-bateria',
+    schema: [],
     img: '/posts/servico-de-recarga-de-bateria.jpg',
-    content: (
-      <>
+    content: `
+      
         <h1>Serviços de Recarga de Bateria: Evite Problemas de Partida</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/servico-de-recarga-de-bateria.jpg"
-          alt={'Serviços de Recarga de Bateria'}
-          width={635}
-          height={246}
+          alt='Serviços de Recarga de Bateria'
+          title='Serviços de Recarga de Bateria'
+          width='635'
+          height='246'
         />
         <p>
           Os serviços de recarga de bateria são uma solução conveniente quando sua bateria está descarregada e você
@@ -616,22 +715,25 @@ export default [
           Se você notar que seu veículo está com dificuldade em dar partida, a recarga da bateria pode ser a solução de
           que você precisa. Confie em profissionais para garantir que a recarga seja feita corretamente.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Instalação de Baterias de Alto Desempenho',
     text: 'Melhore o desempenho do seu veículo com a instalação de baterias de alta potência.',
     link: 'instalacao-de-baterias-de-alto-desempenho',
+    schema: [],
     img: '/posts/instalacao-de-bateria.jpg',
-    content: (
-      <>
+    content: `
+      
         <h1>Instalação de Baterias de Alto Desempenho: Potência e Confiabilidade</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/instalacao-de-bateria.jpg"
-          alt={'Instalação de Baterias de Alto Desempenho'}
-          width={635}
-          height={246}
+          alt='Instalação de Baterias de Alto Desempenho'
+          title='Instalação de Baterias de Alto Desempenho'
+          width='635'
+          height='246'
         />
         <p>
           A instalação de baterias de alto desempenho é uma opção para quem deseja melhorar o desempenho do veículo.
@@ -648,22 +750,25 @@ export default [
           Se você tem um veículo que requer mais potência elétrica, as baterias de alto desempenho podem ser a escolha
           certa. Consulte especialistas para determinar qual bateria atende às suas necessidades.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Assistência de Partida a Frio',
     text: 'Garanta que seu veículo ligue sem problemas mesmo nas condições de inverno mais rigorosas.',
     link: 'assistencia-de-partida-a-frio',
+    schema: [],
     img: '/posts/img5.png',
-    content: (
-      <>
+    content: `
+      
         <h1>Assistência de Partida a Frio: Ligue seu Veículo em Condições Extremas</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/img5.png"
-          alt={'Assistência de Partida a Frio: Ligue seu Veículo em Condições Extremas'}
-          width={635}
-          height={246}
+          alt='Assistência de Partida a Frio: Ligue seu Veículo em Condições Extremas'
+          title='Assistência de Partida a Frio: Ligue seu Veículo em Condições Extremas'
+          width='635'
+          height='246'
         />
         <p>
           Em regiões com invernos rigorosos, a partida a frio pode ser um desafio. Baixas temperaturas podem afetar a
@@ -680,22 +785,25 @@ export default [
           Se você vive em uma área com invernos rigorosos, considere a assistência de partida a frio para manter seu
           veículo funcionando suavemente durante todo o ano.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Serviços de Manutenção Preventiva',
     text: 'Realize verificações regulares de bateria e limpeza de terminais para prolongar a vida útil da bateria.',
     link: 'servicos-de-manutencao-preventiva',
+    schema: [],
     img: '/posts/servico-de-manutencao-de-bateria-preventiva.jpg',
-    content: (
-      <>
+    content: `
+      
         <h1>Serviços de Manutenção Preventiva da Bateria</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/servico-de-manutencao-de-bateria-preventiva.jpg"
-          alt={'Serviços de Manutenção Preventiva'}
-          width={635}
-          height={246}
+          alt='Serviços de Manutenção Preventiva'
+          title='Serviços de Manutenção Preventiva'
+          width='635'
+          height='246'
         />
         <p>
           Os serviços de manutenção preventiva da bateria envolvem verificações regulares e a limpeza de terminais para
@@ -711,22 +819,25 @@ export default [
           Confie em profissionais para realizar a manutenção preventiva da bateria e mantenha seu veículo em excelente
           forma.
         </p>
-      </>
-    )
+      
+`
   },
   {
     title: 'Reciclagem de Baterias Automotivas',
     text: 'Descarte de maneira adequada as baterias antigas para proteger o meio ambiente.',
     link: 'reciclagem-de-baterias-automotivas',
+    schema: [],
     img: '/posts/reciclagem-de-bateria.jpg',
-    content: (
-      <>
+    content: `
+      
         <h1>Reciclagem de Baterias Automotivas: Proteja o Meio Ambiente</h1>
-        <Cape
+        <img
+          class="img"
           src="/posts/reciclagem-de-bateria.jpg"
-          alt={'Reciclagem de Baterias Automotivas'}
-          width={635}
-          height={246}
+          alt='Reciclagem de Baterias Automotivas'
+          title='Reciclagem de Baterias Automotivas'
+          width='635'
+          height='246'
         />
         <p>
           O descarte adequado de baterias automotivas é crucial para proteger o meio ambiente. As baterias antigas
@@ -742,7 +853,7 @@ export default [
           Colabore com locais de reciclagem apropriados para garantir que suas baterias antigas sejam descartadas de
           maneira responsável.
         </p>
-      </>
-    )
+      
+`
   }
 ];
