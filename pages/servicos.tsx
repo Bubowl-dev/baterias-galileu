@@ -17,7 +17,7 @@ const Services = () => {
           id="schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: {
+            __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'ItemList',
               itemListElement: [
@@ -77,7 +77,7 @@ const Services = () => {
                   }
                 }
               ]
-            }
+            })
           }}
         />
       </Head>
