@@ -17,67 +17,49 @@ const Services = () => {
           id="schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'ItemList',
-              itemListElement: [
+            __html: `{
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Carrossel de Serviços Galileu",
+              "itemListElement": [
                 {
-                  '@type': 'ListItem',
-                  position: 1,
-                  item: {
-                    '@type': 'Service',
-                    name: 'Substituição De Baterias Automotivas',
-                    description:
-                      'Falha em algum sistema elétrico, como luz fraca e oscilante, problemas com o sistema de injeção do combustível, com o aquecedor e ar-condicionado. Observe as luzes no painel, quando a bateria começa a ficar menos potente, uma luz acende avisando que a peça precisa ser substituída.',
-                    url: 'https://www.bateriasgalileu.com.br/substituicao-de-baterias-automotivas/'
-                  }
+                  "@type": "ListItem",
+                  "position": 1,
+                  "url": "https://www.bateriasgalileu.com.br/substituicao-de-baterias-automotivas/"
                 },
                 {
-                  '@type': 'ListItem',
-                  position: 2,
-                  item: {
-                    '@type': 'Service',
-                    name: 'Bateria Para Caminhão: Potência E Confiabilidade Para Sua Jornada',
-                    description:
-                      'Assegure o desempenho contínuo do seu caminhão com a escolha adequada de bateria. Explore nossas opções para cuidados e manutenção eficazes.',
-                    url: 'https://www.bateriasgalileu.com.br/bateria-para-caminhao/'
-                  }
+                  "@type": "ListItem",
+                  "position": 2,
+                  "url": "https://www.bateriasgalileu.com.br/bateria-para-caminhao/"
                 },
                 {
-                  '@type': 'ListItem',
-                  position: 3,
-                  item: {
-                    '@type': 'Service',
-                    name: 'Bateria Para Carro: Energia Confiável Para Seu Dia A Dia',
-                    description:
-                      'Garanta a máxima eficiência do seu automóvel com a escolha correta da bateria para carro. Conheça nossas soluções para uma manutenção impecável e duradoura.',
-                    url: 'https://www.bateriasgalileu.com.br/bateria-para-carro/'
-                  }
+                  "@type": "ListItem",
+                  "position": 3,
+                  "url": "https://www.bateriasgalileu.com.br/bateria-para-carro/"
                 },
                 {
-                  '@type': 'ListItem',
-                  position: 4,
-                  item: {
-                    '@type': 'Service',
-                    name: 'Moto Parada: Maior Risco De Descarregar A Bateria',
-                    description:
-                      'Descubra como evitar o descarregamento da bateria em motos que permanecem paradas por períodos prolongados.',
-                    url: 'https://www.bateriasgalileu.com.br/moto-parada-risco-descarregar-bateria/'
-                  }
+                  "@type": "ListItem",
+                  "position": 4,
+                  "url": "https://www.bateriasgalileu.com.br/moto-parada-risco-descarregar-bateria/"
                 },
                 {
-                  '@type': 'ListItem',
-                  position: 5,
-                  item: {
-                    '@type': 'Service',
-                    name: 'A Melhor Bateria De Carro',
-                    description:
-                      'Se você tem um carro com motor 1.0 a 1.8, o recomendável são os modelos de 45 Ah ou 50 ah....',
-                    url: 'https://www.bateriasgalileu.com.br/melhor-bateria-de-carro/'
-                  }
+                  "@type": "ListItem",
+                  "position": 5,
+                  "url": "https://www.bateriasgalileu.com.br/melhor-bateria-de-carro/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "url": "https://www.bateriasgalileu.com.br/sinais-bateria-fim-guia-essencial/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 7,
+                  "url": "https://www.bateriasgalileu.com.br/carro-nao-liga-o-que-pode-ser-e-como-resolver/"
                 }
               ]
-            })
+            }
+            `
           }}
         />
       </Head>
