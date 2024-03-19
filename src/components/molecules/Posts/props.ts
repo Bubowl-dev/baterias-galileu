@@ -1,5 +1,5 @@
-import CardProps from "@/components/atoms/Card/props";
+import ListPostsResponse from '@/api/list-posts/response';
 
 export default interface PostsProps {
-    posts: CardProps[]
+  posts: ListPostsResponse[];
 }

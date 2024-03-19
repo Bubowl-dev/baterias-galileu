@@ -45,7 +45,6 @@ const Animation = () => {
     }
 
     if (sectionReviews) {
-      console.log('section', sectionReviews);
       gsap.from(sectionReviews, {
         scrollTrigger: {
           trigger: sectionReviews,

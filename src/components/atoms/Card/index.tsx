@@ -1,6 +1,6 @@
-import { FC } from "react";
-import * as S from "./styles";
-import CardProps from "./props";
+import { FC } from 'react';
+import * as S from './styles';
+import CardProps from './props';
 
 const Card: FC<CardProps> = ({ title, text, link, img }) => {
   return (

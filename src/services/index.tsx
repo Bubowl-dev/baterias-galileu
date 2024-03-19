@@ -238,7 +238,7 @@ export default [
     ],
     img: '/posts/sinais-bateria-fim.jpg',
     content: `
-      
+
         <h1>Como Identificar Sinais de que Sua Bateria Está Chegando ao Fim: Guia Essencial</h1>
         <img
           class="img"
@@ -288,7 +288,7 @@ export default [
     schema: [],
     img: '/posts/carro-nao-liga.jpg',
     content: `
-      
+
         <h1>Carro Não Liga: Descubra o que Pode Ser e Como Resolver</h1>
         <img
           class="img"
@@ -330,7 +330,7 @@ export default [
           complexas. É fundamental realizar uma análise cuidadosa e, se necessário, contar com a ajuda de um
           profissional qualificado para diagnosticar e resolver o problema de forma eficiente.
         </p>
-      
+
 `
   },
   {
@@ -340,7 +340,7 @@ export default [
     schema: [],
     img: '/posts/risco-de-descarregar-a-bateria.jpg',
     content: `
-      
+
         <h1>Moto Parada: Maior Risco de Descarregar a Bateria</h1>
         <img
           class="img"
@@ -406,7 +406,7 @@ export default [
           Nossa equipe está pronta para ajudá-lo a escolher a melhor bateria que seu carro merece, garantindo
           performance e tranquilidade em todas as viagens.
         </p>
-      
+
 `
   },
   {
@@ -416,7 +416,7 @@ export default [
     schema: [],
     img: '/posts/bateria-do-carro descarregou.jpg',
     content: `
-      
+
         <h1>O que Fazer Quando a Bateria do Carro Descarregou?</h1>
         <img
           class="img"
@@ -464,7 +464,7 @@ export default [
           Nossa equipe está pronta para ajudá-lo a escolher a melhor bateria que seu carro merece, garantindo
           performance e tranquilidade em todas as viagens.
         </p>
-      
+
 `
   },
   {
@@ -474,7 +474,7 @@ export default [
     schema: [],
     img: '/posts/img8.jpeg',
     content: `
-      
+
         <h1>Bateria para Carro: Energia Confiável para seu Dia a Dia</h1>
         <img
           class="img" src="/posts/img8.jpeg" alt='Bateria para Carro: Escolha e Manutenção Ideal' title='Bateria para Carro: Escolha e Manutenção Ideal' width='635' height='246' />
@@ -538,7 +538,7 @@ export default [
           Nossa equipe está pronta para ajudá-lo a escolher a melhor bateria que seu carro merece, garantindo
           performance e tranquilidade em todas as viagens.
         </p>
-      
+
 `
   },
   {
@@ -548,7 +548,7 @@ export default [
     schema: [],
     img: '/posts/bateria-de-caminhao.png',
     content: `
-      
+
         <h1>Bateria para Caminhão: Potência e Confiabilidade para Sua Jornada</h1>
         <img
           class="img"
@@ -612,7 +612,7 @@ export default [
           equipe está pronta para ajudá-lo a escolher a melhor bateria, assegurando desempenho e segurança em todas as
           suas rotas.
         </p>
-      
+
 `
   },
   {
@@ -622,7 +622,7 @@ export default [
     schema: [],
     img: '/posts/img9.jpeg',
     content: `
-      
+
         <h1>Substituição de Baterias Automotivas</h1>
         <img
           class="img" src="/posts/img9.jpeg" alt='Substituição de Baterias Automotivas' title='Substituição de Baterias Automotivas' width='635' height='246' />
@@ -646,7 +646,7 @@ export default [
           Confie em profissionais qualificados para realizar a substituição da bateria do seu veículo e mantenha-se no
           controle da sua segurança e do bom funcionamento do seu automóvel.
         </p>
-      
+
 `
   },
   {
@@ -656,7 +656,7 @@ export default [
     schema: [],
     img: '/posts/bateria-automotiva.jpg',
     content: `
-      
+
         <h1>Teste de Bateria: Mantenha seu Veículo Funcionando Suavemente</h1>
         <img
           class="img"
@@ -680,7 +680,7 @@ export default [
           Confie em profissionais para realizar um teste de bateria preciso e garantir a saúde do sistema elétrico do
           seu veículo.
         </p>
-      
+
 `
   },
   {
@@ -690,7 +690,7 @@ export default [
     schema: [],
     img: '/posts/servico-de-recarga-de-bateria.jpg',
     content: `
-      
+
         <h1>Serviços de Recarga de Bateria: Evite Problemas de Partida</h1>
         <img
           class="img"
@@ -715,7 +715,7 @@ export default [
           Se você notar que seu veículo está com dificuldade em dar partida, a recarga da bateria pode ser a solução de
           que você precisa. Confie em profissionais para garantir que a recarga seja feita corretamente.
         </p>
-      
+
 `
   },
   {
@@ -725,7 +725,7 @@ export default [
     schema: [],
     img: '/posts/instalacao-de-bateria.jpg',
     content: `
-      
+
         <h1>Instalação de Baterias de Alto Desempenho: Potência e Confiabilidade</h1>
         <img
           class="img"
@@ -750,7 +750,7 @@ export default [
           Se você tem um veículo que requer mais potência elétrica, as baterias de alto desempenho podem ser a escolha
           certa. Consulte especialistas para determinar qual bateria atende às suas necessidades.
         </p>
-      
+
 `
   },
   {
@@ -760,7 +760,7 @@ export default [
     schema: [],
     img: '/posts/img5.png',
     content: `
-      
+
         <h1>Assistência de Partida a Frio: Ligue seu Veículo em Condições Extremas</h1>
         <img
           class="img"
@@ -785,7 +785,7 @@ export default [
           Se você vive em uma área com invernos rigorosos, considere a assistência de partida a frio para manter seu
           veículo funcionando suavemente durante todo o ano.
         </p>
-      
+
 `
   },
   {
@@ -795,7 +795,7 @@ export default [
     schema: [],
     img: '/posts/servico-de-manutencao-de-bateria-preventiva.jpg',
     content: `
-      
+
         <h1>Serviços de Manutenção Preventiva da Bateria</h1>
         <img
           class="img"
@@ -819,7 +819,7 @@ export default [
           Confie em profissionais para realizar a manutenção preventiva da bateria e mantenha seu veículo em excelente
           forma.
         </p>
-      
+
 `
   },
   {
@@ -829,7 +829,7 @@ export default [
     schema: [],
     img: '/posts/reciclagem-de-bateria.jpg',
     content: `
-      
+
         <h1>Reciclagem de Baterias Automotivas: Proteja o Meio Ambiente</h1>
         <img
           class="img"
@@ -853,7 +853,7 @@ export default [
           Colabore com locais de reciclagem apropriados para garantir que suas baterias antigas sejam descartadas de
           maneira responsável.
         </p>
-      
+
 `
   }
 ];

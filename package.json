@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "img-donwload": "node ./post-imgs.js",
     "convert-medias": "node ./convert-to-webp.js",
     "build": "yarn convert-medias && next build",
     "start": "next start",
@@ -11,6 +12,7 @@
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.10",
+    "axios": "^1.6.8",
     "gsap": "^3.12.2",
     "next": "latest",
     "next-pwa": "^5.6.0",
