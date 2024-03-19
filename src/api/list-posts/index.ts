@@ -1,6 +1,5 @@
 import api from '..';
 import ListPostsResponse from './response';
-import services from '@/services';
 
 const listPosts = async () => {
   try {
@@ -9,7 +8,6 @@ const listPosts = async () => {
     return data as ListPostsResponse[];
   } catch (error) {
     console.error(error);
-    return services;
   }
 };
 

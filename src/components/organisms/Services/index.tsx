@@ -1,13 +1,14 @@
-import { Main } from "@/styles/components/Main";
-import services from "@/services";
-import WhyChoose from "@/components/organisms/WhyChoose";
-import About from "@/components/organisms/About";
-import Posts from "@/components/molecules/Posts";
+import { Main } from '@/styles/components/Main';
+import WhyChoose from '@/components/organisms/WhyChoose';
+import About from '@/components/organisms/About';
+import Posts from '@/components/molecules/Posts';
 
-import C from "./const";
-import TitlePage from "@/components/atoms/TitlePage";
+import C from './const';
+import TitlePage from '@/components/atoms/TitlePage';
+import { FC } from 'react';
+import ListPostsResponse from '@/api/list-posts/response';
 
-const ServicesTemplate = () => {
+const ServicesTemplate: FC<{ services: ListPostsResponse[] }> = ({ services }) => {
   return (
     <Main>
       <TitlePage title={C.title} description={C.description} />

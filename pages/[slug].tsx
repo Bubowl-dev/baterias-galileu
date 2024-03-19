@@ -4,9 +4,9 @@ import { GetStaticPaths } from 'next';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 import listPosts from '@/api/list-posts';
 import { FC } from 'react';
-import ListPostsResponse from '@/api/list-posts/response';
+import SlugProps from '@/utils/props';
 
-const Content: FC<ListPostsResponse> = ({ json: { title, text, link, schema, content }, ...props }) => (
+const Content: FC<SlugProps> = ({ json: { title, text, link, schema, content }, ...props }) => (
   <>
     <Head>
       <title>{title}</title>
@@ -97,6 +97,7 @@ const Content: FC<ListPostsResponse> = ({ json: { title, text, link, schema, con
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const data = await listPosts();
+  if (!data?.length) return { paths: [], fallback: false };
 
   const paths = data.map(({ json }) => ({
     params: { slug: json.link }
@@ -107,6 +108,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }: { params: Params }) => {
   const data = await listPosts();
+  if (!data?.length) return { props: {} };
+
   const select = data.find(({ json }) => json.link === params.slug);
   return { props: { ...select, data } };
 };
