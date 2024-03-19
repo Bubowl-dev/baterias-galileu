@@ -3,7 +3,6 @@ import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/do
 import Script from 'next/script';
 import { ServerStyleSheet } from 'styled-components';
 
-
 export default class MyDocument extends Document {
   render() {
     return (
@@ -18,7 +17,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="manifest" href="/manifest.json" />
-          <link rel="apple-touch-icon" href="/favicon.png"></link>
+          <link rel="apple-touch-icon" href="https://www.bateriasgalileu.com.br/favicon.png"></link>
           <link rel="icon" href="/favicon.png" sizes="any" />
           <meta name="theme-color" content="#0E4061" />
           <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=G-LF45JBJR9F`} />
