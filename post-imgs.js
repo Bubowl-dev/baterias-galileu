@@ -44,7 +44,9 @@ const getImageAndDownload = async () => {
 
         if (imageUrl) {
           // Ajusta o caminho para incluir a pasta `teste` e usa o link do post como nome do arquivo
-          const destinationPath = `public/posts/${post.json.link}.png`;
+          const destinationPath = post.json.img.includes('/posts')
+            ? `public${post.json.img}`
+            : `public/posts/${post.json.img}`;
           await downloadImage(imageUrl, destinationPath);
         } else {
           console.log('No image URL found in the API response.');
