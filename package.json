@@ -5,7 +5,7 @@
     "dev": "next dev",
     "img-donwload": "node ./post-imgs.js",
     "convert-medias": "node ./convert-to-webp.js",
-    "build": "yarn convert-medias && next build",
+    "build": "yarn img-donwload && yarn convert-medias && next build",
     "start": "next start",
     "lint": "next lint"
   },

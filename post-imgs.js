@@ -9,6 +9,12 @@ const getApiHeaders = () => {
 };
 
 const downloadImage = async (imageUrl, destinationPath) => {
+  // Verifica se o arquivo já existe para evitar sobrescrever
+  if (fs.existsSync(destinationPath)) {
+    console.log(`File already exists: ${destinationPath}`);
+    return; // Sai da função se o arquivo já existir
+  }
+
   try {
     const response = await axios.head(imageUrl);
     if (response.status === 200) {
@@ -37,9 +43,9 @@ const getImageAndDownload = async () => {
         const imageUrl = post.img;
 
         if (imageUrl) {
-          const destinationPath = `public/teste/${post.json.link}.png`;
+          // Ajusta o caminho para incluir a pasta `teste` e usa o link do post como nome do arquivo
+          const destinationPath = `public/posts/${post.json.link}.png`;
           await downloadImage(imageUrl, destinationPath);
-          console.log('Image downloaded successfully!');
         } else {
           console.log('No image URL found in the API response.');
         }
