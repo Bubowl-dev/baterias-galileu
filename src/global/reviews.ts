@@ -2,7 +2,7 @@ const Assessment = [
   {
     name: 'Decio de Freitas Dias',
     img: {
-      src: `${process.env.NEXT_PUBLIC_API_URL}/reviews/decio.png`,
+      src: `/reviews/decio.png`,
       alt: 'Imagem do Decio de Freitas Dias e comentario no Google Maps',
       title: 'Imagem do Decio de Freitas Dias e comentario no Google Maps',
       width: 60,
@@ -15,7 +15,7 @@ const Assessment = [
   {
     name: 'Rodney Lira',
     img: {
-      src: `${process.env.NEXT_PUBLIC_API_URL}/reviews/rodney.png`,
+      src: `/reviews/rodney.png`,
       alt: 'Imagem do Rodney Lira e comentario no Google Maps',
       title: 'Imagem do Rodney Lira e comentario no Google Maps',
       width: 60,
@@ -27,7 +27,7 @@ const Assessment = [
   {
     name: 'Wanderlei',
     img: {
-      src: `${process.env.NEXT_PUBLIC_API_URL}/reviews/wanderlei.png`,
+      src: `/reviews/wanderlei.png`,
       alt: 'Imagem do Wanderlei e comentario no Google Maps',
       title: 'Imagem do Wanderlei e comentario no Google Maps',
       width: 60,

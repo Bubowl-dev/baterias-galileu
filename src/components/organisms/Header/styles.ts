@@ -3,6 +3,7 @@ import { mediaMaxWidth, mediaMinWidth } from '@/utils/media-query';
 import Button from '@/components/molecules/Button';
 import _Logo from '@/components/molecules/Logo';
 import _Nav from '@/components/atoms/Nav';
+import { IconItem } from '@/components/atoms/Nav/styles';
 
 export const Header = styled.header`
   border-top: 0.7rem solid ${({ theme }) => theme.ateneoBlue};
@@ -26,6 +27,10 @@ export const Header = styled.header`
 export const Logo = styled(_Logo)``;
 
 export const Nav = styled(_Nav)`
+  ${IconItem} {
+    display: none;
+  }
+
   ${({ theme }) => mediaMaxWidth('mobile')`
     position: fixed;
     bottom: 2rem;
@@ -35,6 +40,10 @@ export const Nav = styled(_Nav)`
     backdrop-filter: blur(1rem);
     background-color: ${theme.whiteNav};
     z-index: 2;
+
+    ${IconItem} {
+      display: block;
+    }
   `};
 `;
 
