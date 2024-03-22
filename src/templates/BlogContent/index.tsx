@@ -8,7 +8,6 @@ import Writer from '@/components/molecules/Writer';
 import Content from '@/components/atoms/Content';
 
 const BlogContent = ({ content, img, title }: any) => {
-  console.log(content);
   return (
     <Main>
       <S.Content>
