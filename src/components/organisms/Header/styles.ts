@@ -26,9 +26,16 @@ export const Header = styled.header`
 export const Logo = styled(_Logo)``;
 
 export const Nav = styled(_Nav)`
-  ${mediaMaxWidth('mobile')`
-    display: none;
-  `}
+  ${({ theme }) => mediaMaxWidth('mobile')`
+    position: fixed;
+    bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    background-color: ${theme.whiteNav};
+    z-index: 2;
+  `};
 `;
 
 export const Btn = styled(Button)`

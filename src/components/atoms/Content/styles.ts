@@ -1,27 +1,7 @@
-import { styled } from 'styled-components';
-import _Wrapper from '@/styles/components/Wrapper';
 import { mediaMaxWidth } from '@/utils/media-query';
-import Button from '@/components/molecules/Button';
-
-export const Content = styled.section`
-  margin-top: 8.2rem;
-
-  ${mediaMaxWidth('mobile')`
-        margin-top: 2rem;
-        padding-top: 5rem;
-        border-top: 1px solid rgba(14, 64, 97, 0.20);
-    `}
-`;
-
-export const Wrapper = styled(_Wrapper)`
-  display: flex;
-  gap: 9.2rem;
-  height: 100%;
-`;
+import { styled } from 'styled-components';
 
 export const Article = styled.article`
-  width: 100%;
-
   h1 {
     color: ${({ theme }) => theme.richBlack};
     font-size: 4rem;
@@ -132,57 +112,5 @@ export const Article = styled.article`
     ${mediaMaxWidth('mobile')`
             flex-direction: column;
         `}
-  }
-`;
-
-export const ModalZap = styled.div`
-  width: 35%;
-
-  ${mediaMaxWidth('desktop1024')`
-        width: 45%;
-    `}
-
-  ${mediaMaxWidth('mobile')`
-        display: none;
-    `}
-`;
-
-export const Zap = styled.div`
-  position: sticky;
-  top: 4rem;
-  background-color: ${({ theme }) => theme.ateneoBlue};
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
-  padding: 3rem;
-`;
-
-export const TextModal = styled.p`
-  color: ${({ theme }) => theme.white};
-  font-size: 1.6rem;
-  font-style: italic;
-  font-weight: 600;
-  line-height: 2.7rem;
-`;
-
-export const Btn = styled(Button)`
-  background-color: ${({ theme }) => theme.whats};
-  padding: 1.7rem 3rem;
-
-  ${mediaMaxWidth('desktop1024')`
-        padding: 1.7rem 2rem;
-
-        span{
-            font-size: 1.4rem;
-        }
-    `}
-
-  img {
-    width: 1.7rem;
-  }
-
-  span {
-    font-size: 1.6rem;
   }
 `;

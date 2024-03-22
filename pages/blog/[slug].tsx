@@ -1,4 +1,4 @@
-import ContentTemplate from '@/templates/Content';
+import BlogContent from '@/templates/BlogContent';
 import Head from 'next/head';
 import { GetStaticPaths } from 'next';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
@@ -6,7 +6,7 @@ import listPosts from '@/api/list-posts';
 import { FC } from 'react';
 import SlugProps from '@/utils/props';
 
-const Content: FC<SlugProps> = ({ json: { title, text, link, schema, content }, ...props }) => (
+const Content: FC<SlugProps> = ({ json: { title, text, link, schema, content, img }, ...props }) => (
   <>
     <Head>
       <title>{title}</title>
@@ -96,7 +96,7 @@ const Content: FC<SlugProps> = ({ json: { title, text, link, schema, content }, 
         }}
       />
     </Head>
-    <ContentTemplate content={content} services={props.data} />
+    <BlogContent content={content} img={img} title={title} services={props.data} />
   </>
 );
 

@@ -2,6 +2,7 @@ import { styled } from 'styled-components';
 import _Wrapper from '@/styles/components/Wrapper';
 import { mediaMaxWidth } from '@/utils/media-query';
 import Button from '@/components/molecules/Button';
+import LazyImage from '@/components/atoms/LazyImage';
 
 export const Content = styled.section`
   margin-top: 8.2rem;
@@ -19,9 +20,21 @@ export const Wrapper = styled(_Wrapper)`
   height: 100%;
 `;
 
+export const Img = styled(LazyImage)`
+  width: 60%;
+  height: fit-content;
+  margin-bottom: 3rem;
+
+  ${mediaMaxWidth('mobile')`
+    width: 100%;
+  `}
+`;
+
 export const Article = styled.article`
   width: 100%;
+`;
 
+export const BateriasContent = styled.article`
   h1 {
     color: ${({ theme }) => theme.richBlack};
     font-size: 4rem;
