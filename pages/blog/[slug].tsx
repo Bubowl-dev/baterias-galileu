@@ -17,6 +17,8 @@ const Content: FC<SlugProps> = ({ json: { title, text, link, schema, content, im
       <meta property="og:description" content={text} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={text} />
       {schema &&
         schema.length &&
         schema.map((schema: string, index: number) => (

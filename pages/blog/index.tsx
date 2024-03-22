@@ -7,12 +7,14 @@ const Services = ({ data }: any) => (
     <Head>
       <title>Que tipo de serviço está procurando hoje?</title>
       <meta name="description" content="Encontre o serviço que precisar aqui na Baterias Galileu" />
-      <link rel="canonical" href={`${process.env.NEXT_PUBLIC_API_URL}/servicos/`} />
+      <link rel="canonical" href={`${process.env.NEXT_PUBLIC_API_URL}/blog/`} />
       <meta property="og:url" content={`${process.env.NEXT_PUBLIC_API_URL}/`} />
       <meta property="og:title" content="Que tipo de serviço está procurando hoje?" />
       <meta property="og:description" content="Encontre o serviço que precisar aqui na Baterias Galileu" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`} />
+      <meta property="twitter:title" content="Que tipo de serviço está procurando hoje?" />
+      <meta property="twitter:description" content="Encontre o serviço que precisar aqui na Baterias Galileu" />
       <script
         id="schema"
         type="application/ld+json"

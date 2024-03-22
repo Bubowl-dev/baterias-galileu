@@ -32,6 +32,8 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta property="og:title" content="" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`https://www.bateriasgalileu.com.br/`} />
+        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`} />
+        <meta property="twitter:image" content="Twitter link preview image URL"></meta>
         <meta charSet="UTF-8" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

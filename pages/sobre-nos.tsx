@@ -14,6 +14,8 @@ const AboutUs = ({ data }: any) => {
         <meta property="og:description" content="Saiba um pouco mais sobre a historia de Baterias Galileu" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`} />
+        <meta property="twitter:title" content="Saiba mais sobre Baterias Galileu" />
+        <meta property="twitter:description" content="Saiba um pouco mais sobre a historia de Baterias Galileu" />
         <script
           id="schema"
           type="application/ld+json"
