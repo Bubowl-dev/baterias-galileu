@@ -14,7 +14,7 @@ export default {
   timer: 10,
   name: 'Baterias Galileu',
   img: {
-    src: `${process.env.NEXT_PUBLIC_API_URL}/reviews/decio.png`,
+    src: '/imgs/reviews/pessoa1.png',
     alt: 'Imagem do Decio de Freitas Dias e comentario no Google Maps',
     title: 'Imagem do Decio de Freitas Dias e comentario no Google Maps',
     width: 40,
