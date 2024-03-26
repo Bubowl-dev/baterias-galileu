@@ -6,6 +6,9 @@ import * as S from './styles';
 import Reviews from '@/components/organisms/Reviews';
 import Writer from '@/components/molecules/Writer';
 import Content from '@/components/atoms/Content';
+import Comments from '@/components/molecules/Comments';
+import comments from './comments';
+import SendComments from '@/components/atoms/SendComment';
 
 const BlogContent = ({ content, img, title }: any) => {
   return (
@@ -23,6 +26,8 @@ const BlogContent = ({ content, img, title }: any) => {
             <Writer timer={C.timer} name={C.name} img={C.img} date={C.date} />
             <Content content={content} />
             <S.BateriasContent>{C.about}</S.BateriasContent>
+            <Comments comments={comments} />
+            <SendComments />
           </S.Article>
         </S.Wrapper>
       </S.Content>
