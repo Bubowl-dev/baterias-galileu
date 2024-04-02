@@ -2,7 +2,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "yarn img-donwload && yarn convert-medias && next dev",
     "img-donwload": "node ./post-imgs.js",
     "convert-medias": "node ./convert-to-webp.js",
     "build": "yarn img-donwload && yarn convert-medias && next build",

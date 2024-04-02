@@ -11,7 +11,6 @@ const getApiHeaders = () => {
 const downloadImage = async (imageUrl, destinationPath) => {
   // Verifica se o arquivo já existe para evitar sobrescrever
   if (fs.existsSync(destinationPath)) {
-    console.log(`File already exists: ${destinationPath}`);
     return; // Sai da função se o arquivo já existir
   }
 
