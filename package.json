@@ -2,7 +2,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "yarn img-donwload && yarn convert-medias && next dev",
     "img-donwload": "node ./post-imgs.js",
     "convert-medias": "node ./convert-to-webp.js",
     "build": "yarn img-donwload && yarn convert-medias && next build",
@@ -16,6 +16,7 @@
     "gsap": "^3.12.2",
     "next": "latest",
     "next-pwa": "^5.6.0",
+    "nodemailer": "^6.9.13",
     "prettier": "^3.0.3",
     "react": "latest",
     "react-dom": "latest",

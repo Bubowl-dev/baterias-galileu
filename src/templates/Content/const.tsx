@@ -24,7 +24,7 @@ export default {
       height: 20
     },
     button: {
-      name: 'Botão do whatsapp',
+      title: 'Botão do whatsapp',
       text: 'Clique aqui',
       href: Data.socialShare.whats.href,
       target: true

@@ -5,9 +5,9 @@ import About from '@/components/organisms/About';
 import C from './const';
 import ServicesPost from '@/components/organisms/ServicesPost';
 import { FC } from 'react';
-import ListPostsResponse from '@/api/list-posts/response';
+import ServiceProps from './props';
 
-const ServicesTemplate: FC<{ services: ListPostsResponse[] }> = ({ services }) => {
+const ServicesTemplate: FC<{ services: ServiceProps[] }> = ({ services }) => {
   return (
     <Main>
       <ServicesPost title={C.title} description={C.description} posts={services} />

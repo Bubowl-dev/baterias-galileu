@@ -1,10 +1,10 @@
-import * as S from "./styles";
-import C from "./const";
-import Data from "@/global";
-import useAnimation from './animations'
+import * as S from './styles';
+import C from './const';
+import Data from '@/global';
+import useAnimation from './animations';
 
 const Footer = () => {
-  const {lines} = useAnimation()
+  const { lines } = useAnimation();
   return (
     <S.Footer>
       <S.Content>
@@ -26,10 +26,7 @@ const Footer = () => {
                 <S.List>
                   {Data.phone.numbers.map((tel, index) => (
                     <S.Item key={index} ref={el => (lines.current[index] = el)}>
-                      <S.linkTel
-                        href={`tel:+55${tel.replace(" ", "").replace("-", "")}`}
-                        title={tel}
-                      >
+                      <S.linkTel href={`tel:+55${tel.replace(' ', '').replace('-', '')}`} title={tel}>
                         {tel}
                       </S.linkTel>
                     </S.Item>
@@ -51,11 +48,7 @@ const Footer = () => {
                 <S.List>
                   {Data.time.time.map((tel, index) => (
                     <S.Item key={index}>
-                      <S.linkTel
-                        href={`/`}
-                        onClick={(e)=> e.preventDefault()}
-                        title={tel}
-                      >
+                      <S.linkTel href={`/`} onClick={e => e.preventDefault()} title={tel}>
                         {tel}
                       </S.linkTel>
                     </S.Item>

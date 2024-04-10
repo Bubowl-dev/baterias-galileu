@@ -4,6 +4,5 @@ export default interface CardProps {
   link: string;
   schema: any[];
   img: string;
-  'img-prompt': string;
   content: string;
 }
