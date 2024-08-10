@@ -1,12 +1,4 @@
-const axios = require('axios');
-const fs = require('fs');
-
-const getApiHeaders = () => {
-  return {
-    Authorization:
-      'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiQmF0ZXJpYXMgR2FsaWxldSJ9.aMHJS7LSROshuyXiByRYh-RtKa2g60DawTWSKySeG-k'
-  };
-};
+const path = require('path');
 
 const downloadImage = async (imageUrl, destinationPath) => {
   // Verifica se o arquivo já existe para evitar sobrescrever
@@ -15,6 +7,12 @@ const downloadImage = async (imageUrl, destinationPath) => {
   }
 
   try {
+    // Verifica se o diretório de destino existe e cria se não existir
+    const directory = path.dirname(destinationPath);
+    if (!fs.existsSync(directory)) {
+      fs.mkdirSync(directory, { recursive: true });
+    }
+
     const response = await axios.head(imageUrl);
     if (response.status === 200) {
       const imageResponse = await axios.get(imageUrl, { responseType: 'stream', headers: getApiHeaders() });
@@ -33,7 +31,7 @@ const downloadImage = async (imageUrl, destinationPath) => {
 
 const getImageAndDownload = async () => {
   try {
-    const apiUrl = `https://api-iai.bubowl.com.br/user/posts`;
+    const apiUrl = `https://api-iai.bubowl.com.br/user/posts?domain=https%3A%2F%2Fwww.bateriasgalileu.com.br%2F`;
     const response = await axios.get(apiUrl, { headers: getApiHeaders() });
 
     const posts = response.data;
@@ -42,10 +40,10 @@ const getImageAndDownload = async () => {
         const imageUrl = post.img;
 
         if (imageUrl) {
-          // Ajusta o caminho para incluir a pasta `teste` e usa o link do post como nome do arquivo
-          const destinationPath = post.json.img.includes('/posts')
-            ? `public${post.json.img}`
-            : `public/posts/${post.json.img}`;
+          // Extrai o nome do arquivo da URL
+          const fileName = path.basename(imageUrl);
+          // Define o caminho de destino com o nome do arquivo
+          const destinationPath = path.join('public', 'posts', fileName);
           await downloadImage(imageUrl, destinationPath);
         } else {
           console.log('No image URL found in the API response.');

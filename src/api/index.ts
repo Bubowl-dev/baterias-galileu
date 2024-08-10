@@ -6,6 +6,7 @@ const api = axios.create({
 
 api.interceptors.request.use(config => {
   config.headers['Authorization'] = process.env.NEXT_POST_API_TOKEN;
+  config.params = { domain: 'https://www.bateriasgalileu.com.br/' };
 
   return config;
 });

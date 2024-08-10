@@ -3,6 +3,7 @@ import * as S from './styles';
 import CardProps from './props';
 
 const BlogCard: FC<CardProps> = ({ title, text, link, img }) => {
+  console.log('img', img);
   return (
     <S.Card>
       <S.CardLink href={`/blog/${link}`} title={text}>
