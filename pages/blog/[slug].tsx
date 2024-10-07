@@ -6,7 +6,11 @@ import listPosts from '@/api/list-posts';
 import { FC } from 'react';
 import SlugProps from '@/utils/props';
 
-const Content: FC<SlugProps> = ({ json: { title, text, link, schema, content, img }, ...props }) => (
+const Content: FC<SlugProps> = ({
+  json: { title, text, link, schema, content, img, questions },
+  created_at,
+  ...props
+}) => (
   <>
     <Head>
       <title>{title}</title>
@@ -98,7 +102,15 @@ const Content: FC<SlugProps> = ({ json: { title, text, link, schema, content, im
         }}
       />
     </Head>
-    <BlogContent content={content} img={img} title={title} services={props.data} />
+
+    <BlogContent
+      content={content}
+      img={img}
+      title={title}
+      services={props.data}
+      questions={questions}
+      date={created_at.date}
+    />
   </>
 );
 

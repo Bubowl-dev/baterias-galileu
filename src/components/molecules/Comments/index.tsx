@@ -11,11 +11,9 @@ const Comments: FC<CommentsProps> = ({ comments }) => {
         <IconComments /> {comments.length} {comments.length > 1 ? 'Comentários' : 'Comentário'}
       </S.TotalComments>
       <S.AllComments>
-        {comments
-          .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-          .map(({ name, comment, publishedAt }, index) => (
-            <Comment key={index} name={name} comment={comment} publishedAt={publishedAt} />
-          ))}
+        {comments.map((data, index) => (
+          <Comment key={index} {...data} />
+        ))}
       </S.AllComments>
     </S.CommentsContainer>
   );

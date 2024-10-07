@@ -10,7 +10,9 @@ import Comments from '@/components/molecules/Comments';
 import comments from './comments';
 import SendComments from '@/components/atoms/SendComment';
 
-const BlogContent = ({ content, img, title }: any) => {
+const BlogContent = ({ content, questions, date }: any) => {
+  console.log(date);
+
   return (
     <Main>
       <S.Content>
@@ -22,11 +24,10 @@ const BlogContent = ({ content, img, title }: any) => {
             </S.Zap>
           </S.ModalZap>
           <S.Article>
-            <S.Img src={`/posts/${img}`} alt={title} width={335} height={246} />
-            <Writer timer={C.timer} name={C.name} img={C.img} date={C.date} />
+            <Writer timer={C.timer} name={C.name} img={C.img} date={date} />
             <Content content={content} />
             <S.BateriasContent>{C.about}</S.BateriasContent>
-            <Comments comments={comments} />
+            <Comments comments={questions} />
             <SendComments />
           </S.Article>
         </S.Wrapper>

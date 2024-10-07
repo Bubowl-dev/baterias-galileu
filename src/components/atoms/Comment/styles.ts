@@ -5,6 +5,11 @@ export const CommentContainer = styled.li`
   padding: 2rem 1rem;
 `;
 
+export const Answered = styled.div`
+  padding: 0 3rem 0 2rem;
+  margin-top: 1rem;
+`;
+
 export const User = styled.div``;
 
 export const Name = styled.p`
@@ -19,6 +24,5 @@ export const PublishedAt = styled.p`
 `;
 
 export const Comment = styled.p`
-  margin-top: 1rem;
   font-size: 1.6rem;
 `;

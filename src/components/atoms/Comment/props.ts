@@ -1,5 +1,6 @@
 export interface CommentProps {
-  name: string;
-  comment: string;
-  publishedAt: string;
+  answer?: string;
+  answered_by?: string;
+  asked_by: string;
+  question: string;
 }

@@ -4,6 +4,16 @@ import WriterProps from './props';
 import { IconTime } from '@/components/atoms/Svg';
 import ShareButton from '@/components/atoms/Share';
 
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString);
+  date.setFullYear(date.getFullYear() - 1);
+  return date.toLocaleDateString('pt-BR', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric'
+  });
+};
+
 const Writer: FC<WriterProps> = ({ timer, name, img, date }) => {
   return (
     <S.WriterContainer>
@@ -11,7 +21,7 @@ const Writer: FC<WriterProps> = ({ timer, name, img, date }) => {
         <S.Img {...img} />
         <S.Text>
           <S.Name>{name}</S.Name>
-          <S.PublishedAt>Publicado em: {date}</S.PublishedAt>
+          <S.PublishedAt>Publicado em: {formatDate(date)}</S.PublishedAt>
         </S.Text>
       </S.User>
       <S.Timer>
