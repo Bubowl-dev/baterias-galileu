@@ -13,6 +13,11 @@ const Home = () => {
         <link rel="canonical" href={`${process.env.NEXT_PUBLIC_API_URL}/`} />
         <meta property="og:url" content={`${process.env.NEXT_PUBLIC_API_URL}/`} />
         <meta property="og:title" content="Instalação e Manutenção De Baterias" />
+        <meta property="twitter:title" content="Instalação e Manutenção De Baterias" />
+        <meta
+          property="twitter:description"
+          content="Aqui você confere a instalação e Manutenção De Baterias automotivas para carros e caminhões!!"
+        />
         <meta
           property="og:description"
           content="Aqui você confere a instalação e Manutenção De Baterias automotivas para carros e caminhões"

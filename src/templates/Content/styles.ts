@@ -28,7 +28,6 @@ export const Article = styled.article`
     font-style: normal;
     font-weight: 700;
     line-height: 4.8rem;
-    text-transform: capitalize;
     margin: 0rem 0 3rem;
 
     ${mediaMaxWidth('mobile')`
@@ -43,7 +42,6 @@ export const Article = styled.article`
     font-style: normal;
     font-weight: 700;
     line-height: 4.8rem;
-    text-transform: capitalize;
     margin: 3rem 0;
 
     ${mediaMaxWidth('mobile')`
@@ -58,7 +56,6 @@ export const Article = styled.article`
     font-style: normal;
     font-weight: 700;
     line-height: 4.8rem;
-    text-transform: capitalize;
     margin: 3rem 0;
 
     ${mediaMaxWidth('mobile')`
@@ -73,7 +70,6 @@ export const Article = styled.article`
     font-style: normal;
     font-weight: 700;
     line-height: 4.8rem;
-    text-transform: capitalize;
     margin: 3rem 0;
 
     ${mediaMaxWidth('mobile')`

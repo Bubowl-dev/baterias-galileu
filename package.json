@@ -2,18 +2,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "yarn img-donwload && yarn convert-medias && next dev",
+    "img-donwload": "node ./post-imgs.js",
     "convert-medias": "node ./convert-to-webp.js",
-    "build": "yarn convert-medias && next build",
+    "build": "yarn img-donwload && yarn convert-medias && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.10",
+    "axios": "^1.6.8",
+    "dompurify": "^3.1.7",
     "gsap": "^3.12.2",
     "next": "latest",
     "next-pwa": "^5.6.0",
+    "nodemailer": "^6.9.13",
     "prettier": "^3.0.3",
     "react": "latest",
     "react-dom": "latest",
@@ -23,6 +27,7 @@
     "styled-components": "^6.1.0"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.5",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
