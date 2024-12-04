@@ -1,5 +1,7 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+import { Section } from '@/components/organisms/ServicesPost/styles';
 
 const Animation = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -43,6 +45,7 @@ const Animation = () => {
     }
 
     if (sectionReviews) {
+      console.log('section', sectionReviews);
       gsap.from(sectionReviews, {
         scrollTrigger: {
           trigger: sectionReviews,

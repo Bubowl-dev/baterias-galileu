@@ -1,6 +1,6 @@
-import * as S from './styles';
-import C from './const';
-import Stars from '@/components/atoms/Stars';
+import * as S from "./styles";
+import C from "./const";
+import Stars from "@/components/atoms/Stars";
 
 const ReviewsTotal = () => {
   return (

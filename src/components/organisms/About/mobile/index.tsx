@@ -1,7 +1,7 @@
-import * as S from '../styles';
-import C from '../const';
-import useAnimation from '../animation';
-import { useRef } from 'react';
+import * as S from "../styles";
+import C from "../const";
+import useAnimation from "../animation";
+import { useRef } from "react";
 
 const AboutMobile = () => {
   const { backgroundSecondImageRef } = useAnimation();
@@ -10,7 +10,11 @@ const AboutMobile = () => {
   return (
     <S.Imgs>
       {C.imgs.map((img, index) => (
-        <S.Img key={index} {...img} ref={index === 1 ? backgroundSecondImageRef : ref} />
+        <S.Img
+          key={index}
+          {...img}
+          ref={index === 1 ? backgroundSecondImageRef : ref}
+        />
       ))}
     </S.Imgs>
   );

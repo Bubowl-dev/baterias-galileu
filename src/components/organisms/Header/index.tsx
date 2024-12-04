@@ -1,5 +1,5 @@
-import * as S from './styles';
-import C from './const';
+import * as S from "./styles";
+import C from './const'
 
 const Header = () => {
   return (

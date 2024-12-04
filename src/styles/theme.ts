@@ -3,7 +3,6 @@ import 'styled-components';
 const theme = {
   black: '#000',
   white: '#fff',
-  whiteNav: 'rgba(255, 255, 255, 0.5)',
   oxfordBlue: '#032A44',
   ateneoBlue: '#0E4061',
   ateneoBlue33: '#0e406133',

@@ -1,7 +1,7 @@
-import Posts from '@/components/molecules/Posts';
-import * as S from './styles';
-import { FC } from 'react';
-import ServicePostProps from './props';
+import Posts from "@/components/molecules/Posts";
+import * as S from "./styles";
+import { FC } from "react";
+import ServicePostProps from "./props";
 
 const ServicesPost: FC<ServicePostProps> = ({ title, description, posts, subTitle }) => {
   return (

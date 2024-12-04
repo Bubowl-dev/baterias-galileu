@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import _Wrapper from '@/styles/components/Wrapper';
 import _Nav from '@/components/atoms/Nav';
 import LazyImage from '@/components/atoms/LazyImage';
-import { ItemLink, Menu, IconItem } from '@/components/atoms/Nav/styles';
+import { ItemLink, Menu } from '@/components/atoms/Nav/styles';
 import { mediaMaxWidth } from '@/utils/media-query';
 import Link from 'next/link';
 
@@ -103,9 +103,6 @@ export const TitleAbout = styled.h2`
 `;
 
 export const Nav = styled(_Nav)`
-  ${IconItem} {
-    display: none;
-  }
   ${ItemLink} {
     color: ${({ theme }) => theme.white};
     font-size: 1.4rem;

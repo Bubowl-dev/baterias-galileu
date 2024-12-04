@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import _Wrapper from '@/styles/components/Wrapper';
-import LazyImage from '@/components/atoms/LazyImage';
-import Button from '@/components/molecules/Button';
-import { mediaMaxWidth } from '@/utils/media-query';
-import { Text } from '@/components/molecules/Button/styles';
+import styled from "styled-components";
+import _Wrapper from "@/styles/components/Wrapper";
+import LazyImage from "@/components/atoms/LazyImage";
+import Button from "@/components/molecules/Button";
+import { mediaMaxWidth } from "@/utils/media-query";
+import { Text } from "@/components/molecules/Button/styles";
 
 export const WhyChoose = styled.section`
   margin: 3rem 0;
@@ -106,7 +106,7 @@ export const Btn = styled(Button)`
   background: ${({ theme }) => theme.whats};
   padding: 1.7rem 2.6rem;
 
-  ${Text} {
+  ${Text}{
     font-size: 1.6rem;
     font-weight: 700;
   }

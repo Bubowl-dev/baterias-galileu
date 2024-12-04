@@ -1,30 +1,27 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import CustomBrProps from './props';
-import { mediaMaxWidth, mediaMinWidth } from '../media-query';
+import CustomBrProps from "./props";
+import { mediaMaxWidth, mediaMinWidth } from "../media-query";
 
-export const Br = styled.br<{
-  $byMediaquery: CustomBrProps['byMediaquery'];
-  $byViewport: CustomBrProps['byViewport'];
-}>`
+export const Br = styled.br<CustomBrProps>`
   display: none;
 
-  ${({ $byViewport, $byMediaquery }) => {
-    if ($byMediaquery) {
+  ${({ byViewport, byMediaquery }) => {
+    if (byMediaquery) {
       return css`
-        @media (min-width: ${$byMediaquery}) {
+        @media (min-width: ${byMediaquery}) {
           display: initial;
         }
       `;
-    } else if ($byViewport === 'desktop') {
+    } else if (byViewport === "desktop") {
       return css`
-        ${mediaMinWidth('mobile', 1)`
+        ${mediaMinWidth("mobile", 1)`
           display: initial;
         `}
       `;
-    } else if ($byViewport === 'mobile') {
+    } else if (byViewport === "mobile") {
       return css`
-        ${mediaMaxWidth('mobile')`
+        ${mediaMaxWidth("mobile")`
           display: initial;
         `}
       `;
