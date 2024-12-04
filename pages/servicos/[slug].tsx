@@ -1,34 +1,31 @@
+import services from '@/services';
 import ContentTemplate from '@/templates/Content';
 import Head from 'next/head';
 import { GetStaticPaths } from 'next';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
-import listPosts from '@/api/list-posts';
-import { FC } from 'react';
-import SlugProps from '@/utils/props';
 
-const Content: FC<SlugProps> = ({ json: { title, text, link, schema, content }, ...props }) => (
-  <>
-    <Head>
-      <title>{title}</title>
-      <meta name="description" content={text} />
-      <link rel="canonical" href={`${process.env.NEXT_PUBLIC_API_URL}/${link}/`} />
-      <meta property="og:url" content={`${process.env.NEXT_PUBLIC_API_URL}/${link}/`} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={text} />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={text} />
-      {schema &&
-        schema.length &&
-        schema.map((schema: string, index: number) => (
-          <script key={index} id="schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: schema }} />
-        ))}
-      <script
-        id="schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: `
+const Content = (service: any) => {
+  return (
+    <>
+      <Head>
+        <title>{service.title}</title>
+        <meta name="description" content={service.text} />
+        <link rel="canonical" href={`${process.env.NEXT_PUBLIC_API_URL}/${service.link}/`} />
+        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_API_URL}/${service.link}/`} />
+        <meta property="og:title" content={service.title} />
+        <meta property="og:description" content={service.text} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`} />
+        {service?.schema &&
+          service.schema.length &&
+          service.schema.map((schema: string, index: number) => (
+            <script key={index} id="schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: schema }} />
+          ))}
+        <script
+          id="schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `
             {
               "@context": "https://schema.org/", 
               "@type": "Product", 
@@ -90,30 +87,27 @@ const Content: FC<SlugProps> = ({ json: { title, text, link, schema, content }, 
               }]
             }
       `
-        }}
-      />
-    </Head>
-    <ContentTemplate content={content} services={props.data} />
-  </>
-);
+          }}
+        />
+      </Head>
+
+      <ContentTemplate {...service} />
+    </>
+  );
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data = await listPosts();
-  if (!data?.length) return { paths: [], fallback: false };
-
-  const paths = data.map(({ json }) => ({
-    params: { slug: json.link }
+  const paths = services.map(service => ({
+    params: { slug: service.link }
   }));
 
   return { paths, fallback: false };
 };
 
 export const getStaticProps = async ({ params }: { params: Params }) => {
-  const data = await listPosts();
-  if (!data?.length) return { props: {} };
+  const select = services.find(i => i.link === params.slug);
 
-  const select = data.find(({ json }) => json.link === params.slug);
-  return { props: { ...select, data } };
+  return { props: { ...select } };
 };
 
 export default Content;

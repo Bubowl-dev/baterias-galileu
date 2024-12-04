@@ -1,25 +1,23 @@
 import ServicesTemplate from '@/templates/Services';
 import Head from 'next/head';
-import services from '@/services';
 
-const Services = ({ services }: any) => (
-  <>
-    <Head>
-      <title>Que tipo de serviço está procurando hoje?</title>
-      <meta name="description" content="Encontre o serviço que precisar aqui na Baterias Galileu" />
-      <link rel="canonical" href={`${process.env.NEXT_PUBLIC_API_URL}/servicos/`} />
-      <meta property="og:url" content={`${process.env.NEXT_PUBLIC_API_URL}/`} />
-      <meta property="og:title" content="Que tipo de serviço está procurando hoje?" />
-      <meta property="og:description" content="Encontre o serviço que precisar aqui na Baterias Galileu" />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`} />
-      <meta property="twitter:title" content="Que tipo de serviço está procurando hoje?" />
-      <meta property="twitter:description" content="Encontre o serviço que precisar aqui na Baterias Galileu" />
-      <script
-        id="schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: `{
+const Services = () => {
+  return (
+    <>
+      <Head>
+        <title>Que tipo de serviço está procurando hoje?</title>
+        <meta name="description" content="Encontre o serviço que precisar aqui na Baterias Galileu" />
+        <link rel="canonical" href={`${process.env.NEXT_PUBLIC_API_URL}/servicos/`} />
+        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_API_URL}/`} />
+        <meta property="og:title" content="Que tipo de serviço está procurando hoje?" />
+        <meta property="og:description" content="Encontre o serviço que precisar aqui na Baterias Galileu" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`} />
+        <script
+          id="schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
               "@context": "https://schema.org",
               "@type": "ItemList",
               "name": "Carrossel de Serviços Galileu",
@@ -62,20 +60,13 @@ const Services = ({ services }: any) => (
               ]
             }
             `
-        }}
-      />
-    </Head>
+          }}
+        />
+      </Head>
 
-    <ServicesTemplate services={services} />
-  </>
-);
-
-export async function getStaticProps() {
-  return {
-    props: {
-      services
-    }
-  };
-}
+      <ServicesTemplate />
+    </>
+  );
+};
 
 export default Services;

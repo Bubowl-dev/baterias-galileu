@@ -11,8 +11,6 @@ import comments from './comments';
 import SendComments from '@/components/atoms/SendComment';
 
 const BlogContent = ({ content, questions, date }: any) => {
-  console.log(date);
-
   return (
     <Main>
       <S.Content>

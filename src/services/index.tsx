@@ -3,7 +3,7 @@ export default [
   {
     title: 'Bateria de carro: como escolher a melhor opção para o seu veículo',
     text: 'Se você tem um carro com motor 1.0 a 1.8, o recomendável são os modelos de 45 Ah ou 50 ah....',
-    link: '/servicos/melhor-bateria-de-carro',
+    link: 'melhor-bateria-de-carro',
     img: '/posts/bateria-de-carro.jpg',
     schema: [
       `{
@@ -211,7 +211,7 @@ export default [
   {
     title: 'Como Identificar Sinais de que Sua Bateria Está Chegando ao Fim: Guia Essencial',
     text: 'Aprenda a reconhecer os sinais que indicam que sua bateria está no fim de sua vida útil.',
-    link: '/servicos/sinais-bateria-fim-guia-essencial',
+    link: 'sinais-bateria-fim-guia-essencial',
     schema: [
       `{
       "@context": "https://schema.org",
@@ -284,7 +284,7 @@ export default [
   {
     title: 'Carro Não Liga: Descubra o que Pode Ser e Como Resolver',
     text: 'Descubra as possíveis causas para o problema de um carro que não liga e como solucioná-lo.',
-    link: '/servicos/carro-nao-liga-o-que-pode-ser-e-como-resolver',
+    link: 'carro-nao-liga-o-que-pode-ser-e-como-resolver',
     schema: [],
     img: '/posts/carro-nao-liga.jpg',
     content: `
@@ -336,7 +336,7 @@ export default [
   {
     title: 'Moto Parada: Maior Risco de Descarregar a Bateria',
     text: 'Descubra como evitar o descarregamento da bateria em motos que permanecem paradas por períodos prolongados.',
-    link: '/servicos/moto-parada-risco-descarregar-bateria',
+    link: 'moto-parada-risco-descarregar-bateria',
     schema: [],
     img: '/posts/risco-de-descarregar-a-bateria.jpg',
     content: `
@@ -412,7 +412,7 @@ export default [
   {
     title: 'O que Fazer Quando a Bateria do Carro Descarregou?',
     text: 'Aprenda a identificar e resolver situações em que a bateria do seu carro descarregou, evitando transtornos e danos ao veículo.',
-    link: '/servicos/bateria-do-carro-descarregou',
+    link: 'bateria-do-carro-descarregou',
     schema: [],
     img: '/posts/bateria-do-carro descarregou.jpg',
     content: `
@@ -470,7 +470,7 @@ export default [
   {
     title: 'Bateria para Carro: Escolha e Manutenção Ideal',
     text: 'Garanta a máxima eficiência do seu automóvel com a escolha correta da bateria para carro. Conheça nossas soluções para uma manutenção impecável e duradoura.',
-    link: '/servicos/bateria-para-carro',
+    link: 'bateria-para-carro',
     schema: [],
     img: '/posts/img8.jpeg',
     content: `
@@ -544,7 +544,7 @@ export default [
   {
     title: 'Bateria para Caminhão: Guia de Seleção e Cuidados Essenciais',
     text: 'Assegure o desempenho contínuo do seu caminhão com a escolha adequada de bateria. Explore nossas opções para cuidados e manutenção eficazes.',
-    link: '/servicos/bateria-para-caminhao',
+    link: 'bateria-para-caminhao',
     schema: [],
     img: '/posts/bateria-de-caminhao.png',
     content: `
@@ -618,7 +618,7 @@ export default [
   {
     title: 'Substituição de Baterias Automotivas',
     text: 'Falha em algum sistema elétrico, como luz fraca e oscilante, problemas com o sistema de injeção do combustível, com o aquecedor e ar-condicionado. Observe as luzes no painel, quando a bateria começa a ficar menos potente, uma luz acende avisando que a peça precisa ser substituída.',
-    link: '/servicos/substituicao-de-baterias-automotivas',
+    link: 'substituicao-de-baterias-automotivas',
     schema: [],
     img: '/posts/img9.jpeg',
     content: `
@@ -652,7 +652,7 @@ export default [
   {
     title: 'Teste de Bateria',
     text: 'Faça o teste de bateria para verificar a saúde da sua bateria e diagnosticar problemas elétricos em seu veículo.',
-    link: '/servicos/teste-de-bateria',
+    link: 'teste-de-bateria',
     schema: [],
     img: '/posts/bateria-automotiva.jpg',
     content: `
@@ -686,7 +686,7 @@ export default [
   {
     title: 'Serviços de Recarga de Bateria',
     text: 'Recarregue a bateria do seu veículo quando estiver descarregada para evitar problemas de partida.',
-    link: '/servicos/servicos-de-recarga-de-bateria',
+    link: 'servicos-de-recarga-de-bateria',
     schema: [],
     img: '/posts/servico-de-recarga-de-bateria.jpg',
     content: `
@@ -721,7 +721,7 @@ export default [
   {
     title: 'Instalação de Baterias de Alto Desempenho',
     text: 'Melhore o desempenho do seu veículo com a instalação de baterias de alta potência.',
-    link: '/servicos/instalacao-de-baterias-de-alto-desempenho',
+    link: 'instalacao-de-baterias-de-alto-desempenho',
     schema: [],
     img: '/posts/instalacao-de-bateria.jpg',
     content: `
@@ -756,7 +756,7 @@ export default [
   {
     title: 'Assistência de Partida a Frio',
     text: 'Garanta que seu veículo ligue sem problemas mesmo nas condições de inverno mais rigorosas.',
-    link: '/servicos/assistencia-de-partida-a-frio',
+    link: 'assistencia-de-partida-a-frio',
     schema: [],
     img: '/posts/img5.png',
     content: `
@@ -791,7 +791,7 @@ export default [
   {
     title: 'Serviços de Manutenção Preventiva',
     text: 'Realize verificações regulares de bateria e limpeza de terminais para prolongar a vida útil da bateria.',
-    link: '/servicos/servicos-de-manutencao-preventiva',
+    link: 'servicos-de-manutencao-preventiva',
     schema: [],
     img: '/posts/servico-de-manutencao-de-bateria-preventiva.jpg',
     content: `
@@ -825,7 +825,7 @@ export default [
   {
     title: 'Reciclagem de Baterias Automotivas',
     text: 'Descarte de maneira adequada as baterias antigas para proteger o meio ambiente.',
-    link: '/servicos/reciclagem-de-baterias-automotivas',
+    link: 'reciclagem-de-baterias-automotivas',
     schema: [],
     img: '/posts/reciclagem-de-bateria.jpg',
     content: `
