@@ -5,6 +5,7 @@ import { GetStaticPaths } from 'next';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 
 const Content = (service: any) => {
+  console.log('Rendering Content component with service:', service);
   return (
     <>
       <Head>
@@ -97,15 +98,19 @@ const Content = (service: any) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  console.log('Generating static paths');
   const paths = services.map(service => ({
     params: { slug: service.link }
   }));
+  console.log('Generated paths:', paths);
 
   return { paths, fallback: false };
 };
 
 export const getStaticProps = async ({ params }: { params: Params }) => {
+  console.log('Fetching static props for params:', params);
   const select = services.find(i => i.link === params.slug);
+  console.log('Selected service:', select);
 
   return { props: { ...select } };
 };
